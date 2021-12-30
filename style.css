@@ -1,0 +1,11 @@
+.chartable {
+    border-collapse: collapse;
+    border-bottom: 1px solid black;
+}
+.chartable th {
+    border: 1px solid black;
+}
+.chartable td {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}

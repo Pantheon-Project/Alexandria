@@ -2,125 +2,243 @@
 <html lang="en">
 
 <!-- Script includes -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
 
 <head>
-    <title>HTML/CSS/JavaScript Library Quick Reference </title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="Luke Swanson">
-	<meta name="description" content="Quick Reference for HTML and JavaScript Libraries">
+  <title>HTML/CSS/JavaScript Library Quick Reference </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Luke Swanson">
+  <meta name="description" content="Quick Reference for HTML and JavaScript Libraries">
 </head>
 
 <body onload="pageload()">
-    <h1>Quick Reference for HTML and JavaScript Libraries:</h1>
+  <h1>Quick Reference for HTML and JavaScript Libraries:</h1>
 
-    <h2>HTML Lesser-known built-ins:</h2>
-    <ul>
-        <li>Math characters: (comprehensive reference: <a href="https://www.w3schools.com/charsets/ref_utf_math.asp"></a>)
-            <table>
-                <thead>
-                    <tr>
-                        <th>Symbol : Code</th>
-                        <th>Symbol : Code</th>
-                        <th>Symbol : Code</th>
-                        <th>Symbol : Code</th>
-                        <th>Symbol : Code</th>
-                        <th>Symbol : Code</th>
-                        <th>Symbol : Code</th>
-                        <th>Symbol : Code</th>
-                        <th>Symbol : Code</th>
-                        <th>Symbol : Code</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><code>&forall; : &amp;forall;</code></td>
-                        <td><code>&exist; : &amp;exist;</code></td>
-                        <td><code>&part; : &amp;part;</code></td>
-                        <td><code>&empty; : &amp;empty;</code></td>
-                        <td><code>&nabla; : &amp;nabla;</code></td>
-                        <td><code>&isin; : &amp;isin;</code></td>
-                        <td><code>&notin; : &amp;notin;</code></td>
-                        <td><code>&ni; : &amp;ni;</code></td>
-                        <td><code>&prod; : &amp;prod;</code></td>
-                        <td><code>&sum; : &amp;sum;</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>&radic; : &amp;radic;</code></td>
-                        <td><code>&prop; : &amp;prop;</code></td>
-                        <td><code>&infin; : &amp;infin;</code></td>
-                        <td><code>&ang; : &amp;ang;</code></td>
-                        <td><code>&int; : &amp;int;</code></td>
-                        <td><code>&and; : &amp;and;</code></td>
-                        <td><code>&or; : &amp;or;</code></td>
-                        <td><code>&cap; : &amp;cap;</code></td>
-                        <td><code>&cup; : &amp;cup;</code></td>
-                        <td><code>&there4; : &amp;there4;</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>&minus; : &amp;minus;</code></td>
-                        <td><code>&lowast; : &amp;lowast;</code></td>
-                        <td><code>&cong; : &amp;cong;</code></td>
-                        <td><code>&asymp; : &amp;asymp;</code></td>
-                        <td><code>&sim; : &amp;sim;</code></td>
-                        <td><code>&ne; : &amp;ne;</code></td>
-                        <td><code>&equiv; : &amp;equiv;</code></td>
-                        <td><code>&le; : &amp;le;</code></td>
-                        <td><code>&ge; : &amp;ge;</code></td>
-                        <td><code>&equals; : &amp;equals;</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>&sub; : &amp;sub;</code></td>
-                        <td><code>&sup; : &amp;sup;</code></td>
-                        <td><code>&nsub; : &amp;nsub;</code></td>
-                        <td><code>&sube; : &amp;sube;</code></td>
-                        <td><code>&supe; : &amp;supe;</code></td>
-                        <td><code>&oplus; : &amp;oplus;</code></td>
-                        <td><code>&otimes; : &amp;otimes;</code></td>
-                        <td><code>&perp; : &amp;perp;</code></td>
-                        <td><code>&sdot; : &amp;sdot;</code></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+  <h2>Including local/remote files into HTML</h2>
+  <ul>
+    <li>
+      <p>
+        Include CSS: <code id="txt_css"></code>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+      </p>
+    </li>
+    <li>
+      <p>
+        Include JavaScript: <code id="txt_js"></code>
+        <script type="text/javascript" src="./script.js"></script>
+      </p>
+    </li>
+    <li>
+      <p>
+        Include Remote JavaScript: <code id="txt_js_extern"></code>
+      </p>
+    </li>
+  </ul>
+
+  <h2>HTML Lesser-known built-ins:</h2>
+  <ul>
+    <li>
+      <p>
+        UTF characters can be hand-added to html.
+        This is not super-convenient, but useful in cases.<br>
+        Three options for syntax:
+      <ol>
+        <li>
+          <code>&amp;#<em>num</em>;</code>
+          , where <em>num</em> is the utf-8 number
         </li>
-    </ul>
+        <li>
+          <code>&amp;#x<em>num</em>;</code>
+          , where <em>num</em> is the hexadecimal form of the utf-8 number
+        </li>
+        <li>
+          <code>&amp;<em>name</em>;</code>
+          , where <em>name</em> is the html entity name for the symbol.
+          Not all UTF characters have entity names.
+        </li>
+      </ol>
+      </p>
+    </li>
+    <li>HTML entity Math characters:
+      (comprehensive reference, including UTF-only characters:
+      <a href="https://www.w3schools.com/charsets/ref_utf_math.asp" title="W3Schools reference page">
+        https://www.w3schools.com/charsets/ref_utf_math.asp
+      </a>)
+      <table class="chartable">
+        <thead>
+          <tr>
+            <th>Symbol : Code</th>
+            <th>Symbol : Code</th>
+            <th>Symbol : Code</th>
+            <th>Symbol : Code</th>
+            <th>Symbol : Code</th>
+            <th>Symbol : Code</th>
+            <th>Symbol : Code</th>
+            <th>Symbol : Code</th>
+            <th>Symbol : Code</th>
+            <th>Symbol : Code</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>&forall; : &amp;forall;</code></td>
+            <td><code>&exist; : &amp;exist;</code></td>
+            <td><code>&part; : &amp;part;</code></td>
+            <td><code>&empty; : &amp;empty;</code></td>
+            <td><code>&nabla; : &amp;nabla;</code></td>
+            <td><code>&isin; : &amp;isin;</code></td>
+            <td><code>&notin; : &amp;notin;</code></td>
+            <td><code>&ni; : &amp;ni;</code></td>
+            <td><code>&prod; : &amp;prod;</code></td>
+            <td><code>&sum; : &amp;sum;</code></td>
+          </tr>
+          <tr>
+            <td><code>&radic; : &amp;radic;</code></td>
+            <td><code>&prop; : &amp;prop;</code></td>
+            <td><code>&infin; : &amp;infin;</code></td>
+            <td><code>&ang; : &amp;ang;</code></td>
+            <td><code>&int; : &amp;int;</code></td>
+            <td><code>&and; : &amp;and;</code></td>
+            <td><code>&or; : &amp;or;</code></td>
+            <td><code>&cap; : &amp;cap;</code></td>
+            <td><code>&cup; : &amp;cup;</code></td>
+            <td><code>&there4; : &amp;there4;</code></td>
+          </tr>
+          <tr>
+            <td><code>&minus; : &amp;minus;</code></td>
+            <td><code>&lowast; : &amp;lowast;</code></td>
+            <td><code>&cong; : &amp;cong;</code></td>
+            <td><code>&asymp; : &amp;asymp;</code></td>
+            <td><code>&sim; : &amp;sim;</code></td>
+            <td><code>&ne; : &amp;ne;</code></td>
+            <td><code>&equiv; : &amp;equiv;</code></td>
+            <td><code>&le; : &amp;le;</code></td>
+            <td><code>&ge; : &amp;ge;</code></td>
+            <td><code>&equals; : &amp;equals;</code></td>
+          </tr>
+          <tr>
+            <td><code>&sub; : &amp;sub;</code></td>
+            <td><code>&sup; : &amp;sup;</code></td>
+            <td><code>&nsub; : &amp;nsub;</code></td>
+            <td><code>&sube; : &amp;sube;</code></td>
+            <td><code>&supe; : &amp;supe;</code></td>
+            <td><code>&oplus; : &amp;oplus;</code></td>
+            <td><code>&otimes; : &amp;otimes;</code></td>
+            <td><code>&perp; : &amp;perp;</code></td>
+            <td><code>&sdot; : &amp;sdot;</code></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <p></p>
+    </li>
 
-    <h2>Listing of JavaScript Library Includes:</h2>
+    <li>HTML entity Greek letters. <br>
+      Entity codes are just the letter names, partial table below:
+      (comprehensive reference, including UTF-only Greek &amp; Coptic letters:
+      <a href="https://www.w3schools.com/charsets/ref_utf_greek.asp" title="W3Schools reference page">
+        https://www.w3schools.com/charsets/ref_utf_greek.asp
+      </a>) <br>
+      <table class="chartable">
+        <thead>
+          <tr>
+            <th>Symbol : Code</th>
+            <th>Symbol : Code</th>
+            <th>Symbol : Code</th>
+            <th>Symbol : Code</th>
+            <th>Symbol : Code</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>&Alpha; : &amp;Alpha;</code></td>
+            <td><code>&Beta; : &amp;Beta;</code></td>
+            <td><code>&Gamma; : &amp;Gamma;</code></td>
+            <td><code>&Delta; : &amp;Delta;</code></td>
+            <td><code>&Epsilon; : &amp;Epsilon;</code></td>
+          </tr>
+          <tr>
+            <td><code>&alpha; : &amp;alpha;</code></td>
+            <td><code>&beta; : &amp;beta;</code></td>
+            <td><code>&gamma; : &amp;gamma;</code></td>
+            <td><code>&delta; : &amp;delta;</code></td>
+            <td><code>&epsilon; : &amp;epsilon;</code></td>
+          </tr>
+        </tbody>
+      </table>
+      <p></p>
+    </li>
 
-    <span>
-        <h3>jQuery 3</h3>
-        <p>Include: <code id="txt_jquery"></code></p>
-        <script src='https://code.jquery.com/jquery-3.6.0.min.js' async></script>
-    </span>
+    <li>HTML other entities:
+      <table class="chartable">
+        <thead>
+          <tr>
+            <th>Symbol : Code</th>
+            <th>Symbol : Code</th>
+            <th>Symbol : Code</th>
+            <th>Symbol : Code</th>
+            <th>Symbol : Code</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>&lt; : &amp;lt;</code></td>
+            <td><code>&gt; : &amp;gt;</code></td>
+            <td><code>&amp; : &amp;amp;</code></td>
+            <td><code>&quot; : &amp;quot;</code></td>
+            <td><code>&apos; : &amp;apos;</code></td>
+          </tr>
+          <tr>
+            <td><code>&nbsp; : &amp;nbsp;</code></td>
+            <td><code>&copy; : &amp;copy;</code></td>
+            <td><code>&reg; : &amp;reg;</code></td>
+            <td><code>&trade; : &amp;trade;</code></td>
+            <td><code>&cent; : &amp;cent;</code></td>
+          </tr>
+        </tbody>
+      </table>
+      <p></p>
+    </li>
+  </ul>
 
-    <p>Example mathJax equation: $$\int_a^b x^2 = \frac{1}{3}x^3 |_a^b$$</p>
+  <h2>Listing of JavaScript Library Includes:</h2>
+
+  <ul>
+    <li>
+      <h3>jQuery 3</h3>
+      <p>Include: <code id="txt_jquery"></code></p>
+      <script type="text/javascript" src='https://code.jquery.com/jquery-3.6.0.min.js' async></script>
+      <p>Example:</p><br>
+      <table>
+        <tr>
+          <td><code id="txt_jquery_ex"></code> &Rightarrow;</td>
+          <td>
+            <p id="tgt_jquery_ex"></p>
+          </td>
+          <script>
+            $(document).ready(function () {
+              $("#tgt_jquery_ex").text("Text Inserted by jQuery")
+            });
+          </script>
+        </tr>
+      </table>
+    </li>
+    <li>
+      <h3>mathJax</h3>
+      <p>Include: <code id="txt_mathjax"></code></p>
+      <script type="text/javascript"
+        src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+      <p>Example equation:</p> <br>
+      <table>
+        <tr>
+          <td><code id="txt_mjax_ex"></code> &Rightarrow;</td>
+          <td>$$\int_a^b x^2 = \frac{1}{3}x^3 |_a^b$$</td>
+        </tr>
+      </table>
+
+    </li>
+  </ul>
+
 </body>
-
-<style>
-    table {
-        border-collapse: collapse;
-        border-bottom: 1px solid black;
-    }
-    th {
-        border: 1px solid black;
-    }
-    td {
-        border-left: 1px solid black;
-        border-right: 1px solid black;
-    }
-</style>
-
-<script>
-    function pageload() {
-        let str = "<script src=\'https://code.jquery.com/jquery-3.6.0.min.js\' async>";
-        document.getElementById("txt_jquery").innerHTML = escapeHTML(str);
-    }
-
-    function escapeHTML(html_string) {
-        return html_string.replace("&", "&amp").replace("<", "&lt").replace(">", "&gt").replace("\"", "&quot");
-    }
-</script>
 
 </html>
