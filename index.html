@@ -5,33 +5,121 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
 
 <head>
-    <title>Listing of JavaScript Library Includes</title>
+    <title>Quick Reference for HTML and JavaScript Libraries</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Luke Swanson">
-	<meta name="description" content="Listing of JavaScript Library Includes">
+	<meta name="description" content="Quick Reference for HTML and JavaScript Libraries">
 </head>
 
 <body onload="pageload()">
-    <h1>Listing of JavaScript Library Includes</h1>
+    <h1>Quick Reference for HTML and JavaScript Libraries:</h1>
+
+    <h2>HTML Lesser-known built-ins:</h2>
+    <ul>
+        <li>Math characters:
+            <table>
+                <thead>
+                    <tr>
+                        <th>Symbol : Code</th>
+                        <th>Symbol : Code</th>
+                        <th>Symbol : Code</th>
+                        <th>Symbol : Code</th>
+                        <th>Symbol : Code</th>
+                        <th>Symbol : Code</th>
+                        <th>Symbol : Code</th>
+                        <th>Symbol : Code</th>
+                        <th>Symbol : Code</th>
+                        <th>Symbol : Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&forall; : &amp;forall;</code></td>
+                        <td><code>&exist; : &amp;exist;</code></td>
+                        <td><code>&part; : &amp;part;</code></td>
+                        <td><code>&empty; : &amp;empty;</code></td>
+                        <td><code>&nabla; : &amp;nabla;</code></td>
+                        <td><code>&isin; : &amp;isin;</code></td>
+                        <td><code>&notin; : &amp;notin;</code></td>
+                        <td><code>&ni; : &amp;ni;</code></td>
+                        <td><code>&prod; : &amp;prod;</code></td>
+                        <td><code>&sum; : &amp;sum;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&radic; : &amp;radic;</code></td>
+                        <td><code>&prop; : &amp;prop;</code></td>
+                        <td><code>&infin; : &amp;infin;</code></td>
+                        <td><code>&ang; : &amp;ang;</code></td>
+                        <td><code>&int; : &amp;int;</code></td>
+                        <td><code>&and; : &amp;and;</code></td>
+                        <td><code>&or; : &amp;or;</code></td>
+                        <td><code>&cap; : &amp;cap;</code></td>
+                        <td><code>&cup; : &amp;cup;</code></td>
+                        <td><code>&there4; : &amp;there4;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&minus; : &amp;minus;</code></td>
+                        <td><code>&lowast; : &amp;lowast;</code></td>
+                        <td><code>&cong; : &amp;cong;</code></td>
+                        <td><code>&asymp; : &amp;asymp;</code></td>
+                        <td><code>&sim; : &amp;sim;</code></td>
+                        <td><code>&ne; : &amp;ne;</code></td>
+                        <td><code>&equiv; : &amp;equiv;</code></td>
+                        <td><code>&le; : &amp;le;</code></td>
+                        <td><code>&ge; : &amp;ge;</code></td>
+                        <td><code>&equals; : &amp;equals;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&sub; : &amp;sub;</code></td>
+                        <td><code>&sup; : &amp;sup;</code></td>
+                        <td><code>&nsub; : &amp;nsub;</code></td>
+                        <td><code>&sube; : &amp;sube;</code></td>
+                        <td><code>&supe; : &amp;supe;</code></td>
+                        <td><code>&oplus; : &amp;oplus;</code></td>
+                        <td><code>&otimes; : &amp;otimes;</code></td>
+                        <td><code>&perp; : &amp;perp;</code></td>
+                        <td><code>&sdot; : &amp;sdot;</code></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </li>
+    </ul>
+
+    <h2>Listing of JavaScript Library Includes:</h2>
 
     <span>
         <h3>jQuery 3</h3>
-        <pre id="txt_jquery"></pre>
+        <p>Include: <code id="txt_jquery"></code></p>
         <script src='https://code.jquery.com/jquery-3.6.0.min.js' async></script>
     </span>
 
     <p>Example mathJax equation: $$\int_a^b x^2 = \frac{1}{3}x^3 |_a^b$$</p>
 </body>
 
+<style>
+    table {
+        border-collapse: collapse;
+        border-bottom: 1px solid black;
+    }
+    th {
+        border: 1px solid black;
+    }
+    td {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+</style>
+
 <script>
     function pageload() {
-        document.getElementById("txt_jquery").innerText
-        = escapeHTML("<script src=\'https://code.jquery.com/jquery-3.6.0.min.js\' async></script>");
+        let str = "<script src=\'https://code.jquery.com/jquery-3.6.0.min.js\' async>";
+        document.getElementById("txt_jquery").innerHTML = escapeHTML(str);
     }
 
     function escapeHTML(html_string) {
-        return html_string.replace("&", "&amp").replace("<", "&lt").replace(">", "&gt");
+        return html_string.replace("&", "&amp").replace("<", "&lt").replace(">", "&gt").replace("\"", "&quot");
     }
 </script>
 
