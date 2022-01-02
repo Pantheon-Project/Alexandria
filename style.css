@@ -1,3 +1,8 @@
+code {
+    color: black;
+    font-family: 'Segoe UI';
+}
+
 .chartable {
     border-collapse: collapse;
     border-bottom: 1px solid black;
@@ -8,4 +13,12 @@
 .chartable td {
     border-left: 1px solid black;
     border-right: 1px solid black;
+}
+
+.example_table {
+    border: 1px solid black;
+}
+
+.blue_text {
+    color: blue;
 }

@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Script includes -->
-
 <head>
   <title>HTML/CSS/JavaScript Library Quick Reference </title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Luke Swanson">
   <meta name="description" content="Quick Reference for HTML and JavaScript Libraries">
+
+  <!-- HTML includes -->
+  <--#include="../assets/templates/header.html" -->
+
+  <!-- Style includes -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+
+  <!-- Script includes -->
+  <script type="text/javascript" src='https://code.jquery.com/jquery-3.6.0.min.js' crossorigin="anonymous"></script>
+  <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' crossorigin="anonymous" async></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" crossorigin="anonymous" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" crossorigin="anonymous" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"></script>
+  <script type="text/javascript" src="./script.js"></script>
 </head>
 
 <body onload="pageload()">
@@ -17,21 +26,13 @@
   <h2>Including local/remote files into HTML</h2>
   <ul>
     <li>
-      <p>
-        Include CSS: <code id="txt_css"></code>
-        <link rel="stylesheet" type="text/css" href="./style.css">
-      </p>
+      <p>Include CSS: <code id="txt_css"></code></p>
     </li>
     <li>
-      <p>
-        Include JavaScript: <code id="txt_js"></code>
-        <script type="text/javascript" src="./script.js"></script>
-      </p>
+      <p>Include JavaScript: <code id="txt_js"></code></p>
     </li>
     <li>
-      <p>
-        Include Remote JavaScript: <code id="txt_js_extern"></code>
-      </p>
+      <p>Include Remote JavaScript: <code id="txt_js_extern"></code></p>
     </li>
   </ul>
 
@@ -202,43 +203,59 @@
   </ul>
 
   <h2>Listing of JavaScript Library Includes:</h2>
-
   <ul>
     <li>
       <h3>jQuery 3</h3>
       <p>Include: <code id="txt_jquery"></code></p>
-      <script type="text/javascript" src='https://code.jquery.com/jquery-3.6.0.min.js' async></script>
-      <p>Example:</p><br>
-      <table>
+      Example:
+      <table class="example_table">
         <tr>
-          <td><code id="txt_jquery_ex"></code> &Rightarrow;</td>
-          <td>
-            <p id="tgt_jquery_ex"></p>
-          </td>
+          <td><pre><code>
+  $(document).ready(function () {
+    $("#tgt_jquery_ex")
+    .text("Blue text inserted by jQuery")
+    .addClass("blue_text");
+  });
+          </code></pre></td>
+          <td>&Rightarrow;</td>
+          <td><p id="tgt_jquery_ex"></p></td>
           <script>
-            $(document).ready(function () {
-              $("#tgt_jquery_ex").text("Text Inserted by jQuery")
-            });
           </script>
         </tr>
       </table>
     </li>
+
     <li>
       <h3>mathJax</h3>
       <p>Include: <code id="txt_mathjax"></code></p>
-      <script type="text/javascript"
-        src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
-      <p>Example equation:</p> <br>
-      <table>
+      Example equation:
+      <table class="example_table">
         <tr>
-          <td><code id="txt_mjax_ex"></code> &Rightarrow;</td>
+          <td><code id="txt_mjax_ex"></code></td>
+          <td>&Rightarrow;</td>
           <td>$$\int_a^b x^2 = \frac{1}{3}x^3 |_a^b$$</td>
         </tr>
       </table>
-
     </li>
   </ul>
 
+  <h2>Listing of Style Library Includes:</h2>
+
+  <ul>
+    <li>
+      <h3>Bootstrap 3</h3>
+      <p>CSS Include: <code id="txt_bootstrap_css"></code></p>
+      <p>JS Include: <code id="txt_bootstrap_js"></code></p>
+      <p>Bootstrap also requires popper: <code id="txt_bootstrap_popper"></code></p>
+      Example:
+      <table class="example_table">
+        <tr>
+          <td><pre><code id="txt_bootstrap_ex"></code></pre></td>
+          <td>&Rightarrow;</td>
+          <td><p class="text-primary">Text made blue by Bootstrap</p></td>
+        </tr>
+      </table>
+    </li>
 </body>
 
 </html>
