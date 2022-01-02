@@ -256,6 +256,8 @@
         </tr>
       </table>
     </li>
+
+  <!--#include virtual="../assets/templates/footer.html" -->
 </body>
 
 </html>
