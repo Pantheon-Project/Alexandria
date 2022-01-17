@@ -20,230 +20,236 @@
 </head>
 
 <body onload="pageload()">
-  <h1>Quick Reference for Icon Libraries:</h1>
+  <header>
+    <!--#include virtual="../assets/templates/header.shtml" -->
+  </header>
 
-  <p>There are many icon libraries in the world.
-    This page attempts to document some of them.
-    This page will <i>not</i> try to convince you which library to use.
-    It will <i>not</i> try to teach you any given library in depth (follow the link(s) for that).
-    Instead, this page will present a quick reference for each library, including:
+  <main>
+    <h1>Quick Reference for Icon Libraries:</h1>
+
+    <p>There are many icon libraries in the world.
+      This page attempts to document some of them.
+      This page will <i>not</i> try to convince you which library to use.
+      It will <i>not</i> try to teach you any given library in depth (follow the link(s) for that).
+      Instead, this page will present a quick reference for each library, including:
+      <ul>
+        <li>Library name and most recent version tested</li>
+        <li>A link to the library homepage</li>
+        <li>
+          A <code>link</code> or <code>script</code> tag to link the library, typically via CDN.
+          <br>
+          Where possible, I've chosen a CDN from the library producer, rather than a 3rd-party CDN service.
+        </li>
+        <li>Where applicable, brief tips to ensure the library is properly used/initialized.</li>
+        <li>A bare-bones example that can be easily copied and modified.</li>
+        <li>
+          Where applicable, a short reference table of common icons to use.
+          <br>
+          These may also help compare the visual styles of each library.
+        </li>
+      </ul>
+    </p>
+
+    <h2>Listing of Icon Library Includes:</h2>
+
     <ul>
-      <li>Library name and most recent version tested</li>
-      <li>A link to the library homepage</li>
       <li>
-        A <code>link</code> or <code>script</code> tag to link the library, typically via CDN.
-        <br>
-        Where possible, I've chosen a CDN from the library producer, rather than a 3rd-party CDN service.
+        <h3>Bootstrap Icons (v1.7)</h3>
+        <p>
+          <a href="https://icons.getbootstrap.com/" title="Bootstrap Icons Home">https://icons.getbootstrap.com/</a>
+        </p>
+        <p class="inclusion">CSS Include:
+          <br>
+          <code id="txt_bootstrapicon"></code>
+        </p>
+        Example:
+        <table class="example_table">
+          <tr>
+            <td> <pre><code id="txt_bootstrapicon_ex"></code></pre> </td>
+            <td>&Rightarrow;</td>
+            <td><i class="bi-circle"></i></td>
+          </tr>
+        </table>
+        <p>
+          Bootstrap Icons has > 1,500 icons
+          <br>
+          To set the icon, give the icon name prefixed with
+          <code>bi-</code>
+          <br>
+          Optionally include class
+          <code>bi</code>
+          to set some kind of default styling.
+        </p>
+        <p>
+          A sample of icons is given below, for comprehensive reference, see:
+          <a href="https://icons.getbootstrap.com/#icons" title="Bootstrap Icons reference page">
+          https://icons.getbootstrap.com/#icons
+          </a>
+        </p>
+        <table class="chartable fatable">
+          <thead>
+            <tr>
+              <th>Symbol : Name</th>
+              <th>Symbol : Name</th>
+              <th>Symbol : Name</th>
+              <th>Symbol : Name</th>
+              <th>Symbol : Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><i class="bi-activity"></i> : <code>activity</code></td>
+              <td><i class="bi-align-center"></i> : <code>align-center</code></td>
+              <td><i class="bi-alarm"></i> : <code>alarm</code></td>
+              <td><i class="bi-arrow-up-circle"></i> : <code>arrow-up-circle</code></td>
+              <td><i class="bi-bar-chart"></i> : <code>bar-chart</code></td>
+            </tr>
+            <tr>
+              <td><i class="bi-bell"></i> : <code>bell</code></td>
+              <td><i class="bi-bookmark"></i> : <code>bookmark</code></td>
+              <td><i class="bi-box"></i> : <code>box</code></td>
+              <td><i class="bi-camera"></i> : <code>camera</code></td>
+              <td><i class="bi-clipboard"></i> : <code>clipboard</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p><br></p>
       </li>
-      <li>Where applicable, brief tips to ensure the library is properly used/initialized.</li>
-      <li>A bare-bones example that can be easily copied and modified.</li>
+
       <li>
-        Where applicable, a short reference table of common icons to use.
-        <br>
-        These may also help compare the visual styles of each library.
+        <h3>FontAwesome (v5.15)</h3>
+        <p class="inclusion">CSS Include:
+          <br>
+          <code id="txt_fontawesome"></code>
+        </p>
+        <p>
+          FontAwesome also has "personal" embed codes with a registered account.
+          These offer more custom options.
+          <br>
+          For v4, sign up at
+          <a href="https://cdn.fontawesome.com" title="FontAwesome CDN">https://cdn.fontawesome.com</a>
+          , and access your code(s) via
+          <a href="https://cdn.fontawesome.com/embed-codes" title="FontAwesome Embed Codes">https://cdn.fontawesome.com/embed-codes</a>
+          <br>
+          For v5+, sign up at
+          <a href="https://fontawesome.com/start" title="FontAwesome Start Page">https://fontawesome.com/start</a>
+          , and access your "kit(s)" via
+          <a href="https://fontawesome.com/kits/" title="FontAwesome Kits">https://fontawesome.com/kits/</a>.
+          Your kit will include an embed code.
+        </p>
+        Example:
+        <table class="example_table">
+          <tr>
+            <td> <pre><code id="txt_fontawesome_ex"></code></pre> </td>
+            <td>&Rightarrow;</td>
+            <td><i class="far fa-circle"></i></td>
+          </tr>
+        </table>
+        <p>
+          FontAwesome has 1,608 icons (in the free version)
+          <br>
+          To set the icon style, class should include either
+          <code>far</code>
+          for "regular" or
+          <code>fas</code>
+          for "solid" style.
+          <br>
+          To set the icon, give the icon name prefixed with
+          <code>fa-</code>
+        </p>
+        <p>
+          A sample of icons is given below, for comprehensive reference, see:
+          <a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free" title="FontAwesome icons reference page">
+          https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free
+          </a>
+          <br>
+          Or
+          <a href="https://fontawesome.com/v5/cheatsheet" title="FontAwesome Cheatsheet v5">https://fontawesome.com/v5/cheatsheet</a>
+        </p>
+        <table class="chartable fatable">
+          <thead>
+            <tr>
+              <th>Symbol : Name</th>
+              <th>Symbol : Name</th>
+              <th>Symbol : Name</th>
+              <th>Symbol : Name</th>
+              <th>Symbol : Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><i class="fas fa-heartbeat"></i> : <code>heartbeat</code></td>
+              <td><i class="fas fa-align-center"></i> : <code>align-center</code></td>
+              <td><i class="far fa-clock"></i> : <code>clock</code></td>
+              <td><i class="far fa-arrow-alt-circle-up"></i> : <code>arrow-alt-circle-up</code></td>
+              <td><i class="fas fa-chart-bar"></i> : <code>chart-bar</code></td>
+            </tr>
+            <tr>
+              <td><i class="far fa-bell"></i> : <code>bell</code></td>
+              <td><i class="far fa-bookmark"></i> : <code>bookmark</code></td>
+              <td><i class="fas fa-box"></i> : <code>box</code></td>
+              <td><i class="fas fa-camera"></i> : <code>camera</code></td>
+              <td><i class="far fa-clipboard"></i> : <code>clipboard</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p><br></p>
+      </li>
+
+      <li>
+        <h3>Feather (v4.28)</h3>
+        <p class="inclusion">JS Include:
+          <br>
+          <code id="txt_feather"></code>
+        </p>
+        Example:
+        <table class="example_table">
+          <tr>
+            <td> <pre><code id="txt_feather_ex"></code></pre> </td>
+            <td>&Rightarrow;</td>
+            <td><i data-feather="circle"></i></td>
+          </tr>
+        </table>
+        <p>
+          Feather has 286 icons.
+          <br>
+          To make the Feather icons render, your script must include a call to <code>feather.replace()</code><br>
+          A sample of icons given below, for comprehensive reference, see:
+          <a href="https://feathericons.com/" title="Feather icons reference page">
+          https://feathericons.com/
+          </a><br>
+        </p>
+        <table class="chartable">
+          <thead>
+            <tr>
+              <th>Symbol : Name</th>
+              <th>Symbol : Name</th>
+              <th>Symbol : Name</th>
+              <th>Symbol : Name</th>
+              <th>Symbol : Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><i data-feather="activity"></i> : <code>activity</code></td>
+              <td><i data-feather="align-center"></i> : <code>align-center</code></td>
+              <td><i data-feather="clock"></i> : <code>clock</code></td>
+              <td><i data-feather="arrow-up-circle"></i> : <code>arrow-up-circle</code></td>
+              <td><i data-feather="bar-chart"></i> : <code>bar-chart</code></td>
+            </tr>
+            <tr>
+              <td><i data-feather="bell"></i> : <code>bell</code></td>
+              <td><i data-feather="bookmark"></i> : <code>bookmark</code></td>
+              <td><i data-feather="box"></i> : <code>box</code></td>
+              <td><i data-feather="camera"></i> : <code>camera</code></td>
+              <td><i data-feather="clipboard"></i> : <code>clipboard</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p><br></p>
       </li>
     </ul>
-  </p>
-
-  <h2>Listing of Icon Library Includes:</h2>
-
-  <ul>
-    <li>
-      <h3>Bootstrap Icons (v1.7)</h3>
-      <p>
-        <a href="https://icons.getbootstrap.com/" title="Bootstrap Icons Home">https://icons.getbootstrap.com/</a>
-      </p>
-      <p class="inclusion">CSS Include:
-         <br>
-         <code id="txt_bootstrapicon"></code>
-      </p>
-      Example:
-      <table class="example_table">
-        <tr>
-          <td> <pre><code id="txt_bootstrapicon_ex"></code></pre> </td>
-          <td>&Rightarrow;</td>
-          <td><i class="bi-circle"></i></td>
-        </tr>
-      </table>
-      <p>
-         Bootstrap Icons has > 1,500 icons
-         <br>
-         To set the icon, give the icon name prefixed with
-         <code>bi-</code>
-         <br>
-         Optionally include class
-         <code>bi</code>
-         to set some kind of default styling.
-      </p>
-      <p>
-         A sample of icons is given below, for comprehensive reference, see:
-         <a href="https://icons.getbootstrap.com/#icons" title="Bootstrap Icons reference page">
-         https://icons.getbootstrap.com/#icons
-         </a>
-      </p>
-      <table class="chartable fatable">
-        <thead>
-          <tr>
-            <th>Symbol : Name</th>
-            <th>Symbol : Name</th>
-            <th>Symbol : Name</th>
-            <th>Symbol : Name</th>
-            <th>Symbol : Name</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><i class="bi-activity"></i> : <code>activity</code></td>
-            <td><i class="bi-align-center"></i> : <code>align-center</code></td>
-            <td><i class="bi-alarm"></i> : <code>alarm</code></td>
-            <td><i class="bi-arrow-up-circle"></i> : <code>arrow-up-circle</code></td>
-            <td><i class="bi-bar-chart"></i> : <code>bar-chart</code></td>
-          </tr>
-          <tr>
-            <td><i class="bi-bell"></i> : <code>bell</code></td>
-            <td><i class="bi-bookmark"></i> : <code>bookmark</code></td>
-            <td><i class="bi-box"></i> : <code>box</code></td>
-            <td><i class="bi-camera"></i> : <code>camera</code></td>
-            <td><i class="bi-clipboard"></i> : <code>clipboard</code></td>
-          </tr>
-        </tbody>
-      </table>
-      <p><br></p>
-    </li>
-
-    <li>
-      <h3>FontAwesome (v5.15)</h3>
-      <p class="inclusion">CSS Include:
-         <br>
-         <code id="txt_fontawesome"></code>
-      </p>
-      <p>
-         FontAwesome also has "personal" embed codes with a registered account.
-         These offer more custom options.
-         <br>
-         For v4, sign up at
-         <a href="https://cdn.fontawesome.com" title="FontAwesome CDN">https://cdn.fontawesome.com</a>
-         , and access your code(s) via
-         <a href="https://cdn.fontawesome.com/embed-codes" title="FontAwesome Embed Codes">https://cdn.fontawesome.com/embed-codes</a>
-         <br>
-         For v5+, sign up at
-         <a href="https://fontawesome.com/start" title="FontAwesome Start Page">https://fontawesome.com/start</a>
-         , and access your "kit(s)" via
-         <a href="https://fontawesome.com/kits/" title="FontAwesome Kits">https://fontawesome.com/kits/</a>.
-         Your kit will include an embed code.
-      </p>
-      Example:
-      <table class="example_table">
-        <tr>
-          <td> <pre><code id="txt_fontawesome_ex"></code></pre> </td>
-          <td>&Rightarrow;</td>
-          <td><i class="far fa-circle"></i></td>
-        </tr>
-      </table>
-      <p>
-         FontAwesome has 1,608 icons (in the free version)
-         <br>
-         To set the icon style, class should include either
-         <code>far</code>
-         for "regular" or
-         <code>fas</code>
-         for "solid" style.
-         <br>
-         To set the icon, give the icon name prefixed with
-         <code>fa-</code>
-      </p>
-      <p>
-         A sample of icons is given below, for comprehensive reference, see:
-         <a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free" title="FontAwesome icons reference page">
-         https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free
-         </a>
-         <br>
-         Or
-         <a href="https://fontawesome.com/v5/cheatsheet" title="FontAwesome Cheatsheet v5">https://fontawesome.com/v5/cheatsheet</a>
-      </p>
-      <table class="chartable fatable">
-        <thead>
-          <tr>
-            <th>Symbol : Name</th>
-            <th>Symbol : Name</th>
-            <th>Symbol : Name</th>
-            <th>Symbol : Name</th>
-            <th>Symbol : Name</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><i class="fas fa-heartbeat"></i> : <code>heartbeat</code></td>
-            <td><i class="fas fa-align-center"></i> : <code>align-center</code></td>
-            <td><i class="far fa-clock"></i> : <code>clock</code></td>
-            <td><i class="far fa-arrow-alt-circle-up"></i> : <code>arrow-alt-circle-up</code></td>
-            <td><i class="fas fa-chart-bar"></i> : <code>chart-bar</code></td>
-          </tr>
-          <tr>
-            <td><i class="far fa-bell"></i> : <code>bell</code></td>
-            <td><i class="far fa-bookmark"></i> : <code>bookmark</code></td>
-            <td><i class="fas fa-box"></i> : <code>box</code></td>
-            <td><i class="fas fa-camera"></i> : <code>camera</code></td>
-            <td><i class="far fa-clipboard"></i> : <code>clipboard</code></td>
-          </tr>
-        </tbody>
-      </table>
-      <p><br></p>
-    </li>
-
-    <li>
-      <h3>Feather (v4.28)</h3>
-      <p class="inclusion">JS Include:
-        <br>
-        <code id="txt_feather"></code>
-      </p>
-      Example:
-      <table class="example_table">
-        <tr>
-          <td> <pre><code id="txt_feather_ex"></code></pre> </td>
-          <td>&Rightarrow;</td>
-          <td><i data-feather="circle"></i></td>
-        </tr>
-      </table>
-      <p>
-         Feather has 286 icons.
-         <br>
-         To make the Feather icons render, your script must include a call to <code>feather.replace()</code><br>
-         A sample of icons given below, for comprehensive reference, see:
-         <a href="https://feathericons.com/" title="Feather icons reference page">
-         https://feathericons.com/
-         </a><br>
-      </p>
-      <table class="chartable">
-        <thead>
-          <tr>
-            <th>Symbol : Name</th>
-            <th>Symbol : Name</th>
-            <th>Symbol : Name</th>
-            <th>Symbol : Name</th>
-            <th>Symbol : Name</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><i data-feather="activity"></i> : <code>activity</code></td>
-            <td><i data-feather="align-center"></i> : <code>align-center</code></td>
-            <td><i data-feather="clock"></i> : <code>clock</code></td>
-            <td><i data-feather="arrow-up-circle"></i> : <code>arrow-up-circle</code></td>
-            <td><i data-feather="bar-chart"></i> : <code>bar-chart</code></td>
-          </tr>
-          <tr>
-            <td><i data-feather="bell"></i> : <code>bell</code></td>
-            <td><i data-feather="bookmark"></i> : <code>bookmark</code></td>
-            <td><i data-feather="box"></i> : <code>box</code></td>
-            <td><i data-feather="camera"></i> : <code>camera</code></td>
-            <td><i data-feather="clipboard"></i> : <code>clipboard</code></td>
-          </tr>
-        </tbody>
-      </table>
-      <p><br></p>
-    </li>
-  </ul>
+  </main>
 
   <nav>
     <div style="display: flex;">

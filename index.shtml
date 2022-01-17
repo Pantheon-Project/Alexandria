@@ -19,197 +19,203 @@
 </head>
 
 <body onload="pageload()">
-  <h1>Quick Reference for HTML and JavaScript Libraries:</h1>
+  <header>
+    <!--#include virtual="../assets/templates/header.shtml" -->
+  </header>
 
-  <p>
-    There are many HTML/CSS/JS libraries in the world.
-    This website attempts to document some of them.
-    This site will <i>not</i> try to convince you which libraries to use.
-    It will <i>not</i> try to teach you any given library in depth (follow the link(s) for that).
-    Instead, this site will present a quick reference for each library, as well as a number of handy built-in HTML/CSS/JS things.
-    <br>
-    This homepage documents very basic concepts such as file inclusion and some lesser-known built-in topics.
-    Other pages cover various categories of library.
-  </p>
+  <main>
+    <h1>Quick Reference for HTML and JavaScript Libraries:</h1>
 
-  <h2>Including local/remote files into HTML</h2>
-  <ul>
-    <li>
-      <p>Include CSS: <code id="txt_css"></code></p>
-    </li>
-    <li>
-      <p>Include JavaScript: <code id="txt_js"></code></p>
-    </li>
-    <li>
-      <p>Include Remote JavaScript: <code id="txt_js_extern"></code></p>
-    </li>
-  </ul>
+    <p>
+      There are many HTML/CSS/JS libraries in the world.
+      This website attempts to document some of them.
+      This site will <i>not</i> try to convince you which libraries to use.
+      It will <i>not</i> try to teach you any given library in depth (follow the link(s) for that).
+      Instead, this site will present a quick reference for each library, as well as a number of handy built-in HTML/CSS/JS things.
+      <br>
+      This homepage documents very basic concepts such as file inclusion and some lesser-known built-in topics.
+      Other pages cover various categories of library.
+    </p>
 
-  <h2>HTML Lesser-known built-ins:</h2>
-  <ul>
-    <li>
-      <p>
-        UTF characters can be hand-added to html.
-        This is not super-convenient, but useful in cases.<br>
-        Three options for syntax:
-      <ol>
-        <li>
-          <code>&amp;#<em>num</em>;</code>
-          , where <em>num</em> is the utf-8 number
-        </li>
-        <li>
-          <code>&amp;#x<em>num</em>;</code>
-          , where <em>num</em> is the hexadecimal form of the utf-8 number
-        </li>
-        <li>
-          <code>&amp;<em>name</em>;</code>
-          , where <em>name</em> is the html entity name for the symbol.
-          Not all UTF characters have entity names.
-        </li>
-      </ol>
-      </p>
-    </li>
-    <li>HTML entity Math characters:
-      (comprehensive reference, including UTF-only characters:
-      <a href="https://www.w3schools.com/charsets/ref_utf_math.asp" title="W3Schools reference page">
-        https://www.w3schools.com/charsets/ref_utf_math.asp
-      </a>)
-      <table class="chartable">
-        <thead>
-          <tr>
-            <th>Symbol : Code</th>
-            <th>Symbol : Code</th>
-            <th>Symbol : Code</th>
-            <th>Symbol : Code</th>
-            <th>Symbol : Code</th>
-            <th>Symbol : Code</th>
-            <th>Symbol : Code</th>
-            <th>Symbol : Code</th>
-            <th>Symbol : Code</th>
-            <th>Symbol : Code</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><code>&forall; : &amp;forall;</code></td>
-            <td><code>&exist; : &amp;exist;</code></td>
-            <td><code>&part; : &amp;part;</code></td>
-            <td><code>&empty; : &amp;empty;</code></td>
-            <td><code>&nabla; : &amp;nabla;</code></td>
-            <td><code>&isin; : &amp;isin;</code></td>
-            <td><code>&notin; : &amp;notin;</code></td>
-            <td><code>&ni; : &amp;ni;</code></td>
-            <td><code>&prod; : &amp;prod;</code></td>
-            <td><code>&sum; : &amp;sum;</code></td>
-          </tr>
-          <tr>
-            <td><code>&radic; : &amp;radic;</code></td>
-            <td><code>&prop; : &amp;prop;</code></td>
-            <td><code>&infin; : &amp;infin;</code></td>
-            <td><code>&ang; : &amp;ang;</code></td>
-            <td><code>&int; : &amp;int;</code></td>
-            <td><code>&and; : &amp;and;</code></td>
-            <td><code>&or; : &amp;or;</code></td>
-            <td><code>&cap; : &amp;cap;</code></td>
-            <td><code>&cup; : &amp;cup;</code></td>
-            <td><code>&there4; : &amp;there4;</code></td>
-          </tr>
-          <tr>
-            <td><code>&minus; : &amp;minus;</code></td>
-            <td><code>&lowast; : &amp;lowast;</code></td>
-            <td><code>&cong; : &amp;cong;</code></td>
-            <td><code>&asymp; : &amp;asymp;</code></td>
-            <td><code>&sim; : &amp;sim;</code></td>
-            <td><code>&ne; : &amp;ne;</code></td>
-            <td><code>&equiv; : &amp;equiv;</code></td>
-            <td><code>&le; : &amp;le;</code></td>
-            <td><code>&ge; : &amp;ge;</code></td>
-            <td><code>&equals; : &amp;equals;</code></td>
-          </tr>
-          <tr>
-            <td><code>&sub; : &amp;sub;</code></td>
-            <td><code>&sup; : &amp;sup;</code></td>
-            <td><code>&nsub; : &amp;nsub;</code></td>
-            <td><code>&sube; : &amp;sube;</code></td>
-            <td><code>&supe; : &amp;supe;</code></td>
-            <td><code>&oplus; : &amp;oplus;</code></td>
-            <td><code>&otimes; : &amp;otimes;</code></td>
-            <td><code>&perp; : &amp;perp;</code></td>
-            <td><code>&sdot; : &amp;sdot;</code></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-      <p></p>
-    </li>
+    <h2>Including local/remote files into HTML</h2>
+    <ul>
+      <li>
+        <p>Include CSS: <code id="txt_css"></code></p>
+      </li>
+      <li>
+        <p>Include JavaScript: <code id="txt_js"></code></p>
+      </li>
+      <li>
+        <p>Include Remote JavaScript: <code id="txt_js_extern"></code></p>
+      </li>
+    </ul>
 
-    <li>HTML entity Greek letters. <br>
-      Entity codes are just the letter names, partial table below:
-      (comprehensive reference, including UTF-only Greek &amp; Coptic letters:
-      <a href="https://www.w3schools.com/charsets/ref_utf_greek.asp" title="W3Schools reference page">
-        https://www.w3schools.com/charsets/ref_utf_greek.asp
-      </a>) <br>
-      <table class="chartable">
-        <thead>
-          <tr>
-            <th>Symbol : Code</th>
-            <th>Symbol : Code</th>
-            <th>Symbol : Code</th>
-            <th>Symbol : Code</th>
-            <th>Symbol : Code</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><code>&Alpha; : &amp;Alpha;</code></td>
-            <td><code>&Beta; : &amp;Beta;</code></td>
-            <td><code>&Gamma; : &amp;Gamma;</code></td>
-            <td><code>&Delta; : &amp;Delta;</code></td>
-            <td><code>&Epsilon; : &amp;Epsilon;</code></td>
-          </tr>
-          <tr>
-            <td><code>&alpha; : &amp;alpha;</code></td>
-            <td><code>&beta; : &amp;beta;</code></td>
-            <td><code>&gamma; : &amp;gamma;</code></td>
-            <td><code>&delta; : &amp;delta;</code></td>
-            <td><code>&epsilon; : &amp;epsilon;</code></td>
-          </tr>
-        </tbody>
-      </table>
-      <p></p>
-    </li>
+    <h2>HTML Lesser-known built-ins:</h2>
+    <ul>
+      <li>
+        <p>
+          UTF characters can be hand-added to html.
+          This is not super-convenient, but useful in cases.<br>
+          Three options for syntax:
+        <ol>
+          <li>
+            <code>&amp;#<em>num</em>;</code>
+            , where <em>num</em> is the utf-8 number
+          </li>
+          <li>
+            <code>&amp;#x<em>num</em>;</code>
+            , where <em>num</em> is the hexadecimal form of the utf-8 number
+          </li>
+          <li>
+            <code>&amp;<em>name</em>;</code>
+            , where <em>name</em> is the html entity name for the symbol.
+            Not all UTF characters have entity names.
+          </li>
+        </ol>
+        </p>
+      </li>
+      <li>HTML entity Math characters:
+        (comprehensive reference, including UTF-only characters:
+        <a href="https://www.w3schools.com/charsets/ref_utf_math.asp" title="W3Schools reference page">
+          https://www.w3schools.com/charsets/ref_utf_math.asp
+        </a>)
+        <table class="chartable">
+          <thead>
+            <tr>
+              <th>Symbol : Code</th>
+              <th>Symbol : Code</th>
+              <th>Symbol : Code</th>
+              <th>Symbol : Code</th>
+              <th>Symbol : Code</th>
+              <th>Symbol : Code</th>
+              <th>Symbol : Code</th>
+              <th>Symbol : Code</th>
+              <th>Symbol : Code</th>
+              <th>Symbol : Code</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>&forall; : &amp;forall;</code></td>
+              <td><code>&exist; : &amp;exist;</code></td>
+              <td><code>&part; : &amp;part;</code></td>
+              <td><code>&empty; : &amp;empty;</code></td>
+              <td><code>&nabla; : &amp;nabla;</code></td>
+              <td><code>&isin; : &amp;isin;</code></td>
+              <td><code>&notin; : &amp;notin;</code></td>
+              <td><code>&ni; : &amp;ni;</code></td>
+              <td><code>&prod; : &amp;prod;</code></td>
+              <td><code>&sum; : &amp;sum;</code></td>
+            </tr>
+            <tr>
+              <td><code>&radic; : &amp;radic;</code></td>
+              <td><code>&prop; : &amp;prop;</code></td>
+              <td><code>&infin; : &amp;infin;</code></td>
+              <td><code>&ang; : &amp;ang;</code></td>
+              <td><code>&int; : &amp;int;</code></td>
+              <td><code>&and; : &amp;and;</code></td>
+              <td><code>&or; : &amp;or;</code></td>
+              <td><code>&cap; : &amp;cap;</code></td>
+              <td><code>&cup; : &amp;cup;</code></td>
+              <td><code>&there4; : &amp;there4;</code></td>
+            </tr>
+            <tr>
+              <td><code>&minus; : &amp;minus;</code></td>
+              <td><code>&lowast; : &amp;lowast;</code></td>
+              <td><code>&cong; : &amp;cong;</code></td>
+              <td><code>&asymp; : &amp;asymp;</code></td>
+              <td><code>&sim; : &amp;sim;</code></td>
+              <td><code>&ne; : &amp;ne;</code></td>
+              <td><code>&equiv; : &amp;equiv;</code></td>
+              <td><code>&le; : &amp;le;</code></td>
+              <td><code>&ge; : &amp;ge;</code></td>
+              <td><code>&equals; : &amp;equals;</code></td>
+            </tr>
+            <tr>
+              <td><code>&sub; : &amp;sub;</code></td>
+              <td><code>&sup; : &amp;sup;</code></td>
+              <td><code>&nsub; : &amp;nsub;</code></td>
+              <td><code>&sube; : &amp;sube;</code></td>
+              <td><code>&supe; : &amp;supe;</code></td>
+              <td><code>&oplus; : &amp;oplus;</code></td>
+              <td><code>&otimes; : &amp;otimes;</code></td>
+              <td><code>&perp; : &amp;perp;</code></td>
+              <td><code>&sdot; : &amp;sdot;</code></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p></p>
+      </li>
 
-    <li>HTML other entities:
-      <table class="chartable">
-        <thead>
-          <tr>
-            <th>Symbol : Code</th>
-            <th>Symbol : Code</th>
-            <th>Symbol : Code</th>
-            <th>Symbol : Code</th>
-            <th>Symbol : Code</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><code>&lt; : &amp;lt;</code></td>
-            <td><code>&gt; : &amp;gt;</code></td>
-            <td><code>&amp; : &amp;amp;</code></td>
-            <td><code>&quot; : &amp;quot;</code></td>
-            <td><code>&apos; : &amp;apos;</code></td>
-          </tr>
-          <tr>
-            <td><code>&nbsp; : &amp;nbsp;</code></td>
-            <td><code>&copy; : &amp;copy;</code></td>
-            <td><code>&reg; : &amp;reg;</code></td>
-            <td><code>&trade; : &amp;trade;</code></td>
-            <td><code>&cent; : &amp;cent;</code></td>
-          </tr>
-        </tbody>
-      </table>
-      <p></p>
-    </li>
-  </ul>
+      <li>HTML entity Greek letters. <br>
+        Entity codes are just the letter names, partial table below:
+        (comprehensive reference, including UTF-only Greek &amp; Coptic letters:
+        <a href="https://www.w3schools.com/charsets/ref_utf_greek.asp" title="W3Schools reference page">
+          https://www.w3schools.com/charsets/ref_utf_greek.asp
+        </a>) <br>
+        <table class="chartable">
+          <thead>
+            <tr>
+              <th>Symbol : Code</th>
+              <th>Symbol : Code</th>
+              <th>Symbol : Code</th>
+              <th>Symbol : Code</th>
+              <th>Symbol : Code</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>&Alpha; : &amp;Alpha;</code></td>
+              <td><code>&Beta; : &amp;Beta;</code></td>
+              <td><code>&Gamma; : &amp;Gamma;</code></td>
+              <td><code>&Delta; : &amp;Delta;</code></td>
+              <td><code>&Epsilon; : &amp;Epsilon;</code></td>
+            </tr>
+            <tr>
+              <td><code>&alpha; : &amp;alpha;</code></td>
+              <td><code>&beta; : &amp;beta;</code></td>
+              <td><code>&gamma; : &amp;gamma;</code></td>
+              <td><code>&delta; : &amp;delta;</code></td>
+              <td><code>&epsilon; : &amp;epsilon;</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p></p>
+      </li>
+
+      <li>HTML other entities:
+        <table class="chartable">
+          <thead>
+            <tr>
+              <th>Symbol : Code</th>
+              <th>Symbol : Code</th>
+              <th>Symbol : Code</th>
+              <th>Symbol : Code</th>
+              <th>Symbol : Code</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>&lt; : &amp;lt;</code></td>
+              <td><code>&gt; : &amp;gt;</code></td>
+              <td><code>&amp; : &amp;amp;</code></td>
+              <td><code>&quot; : &amp;quot;</code></td>
+              <td><code>&apos; : &amp;apos;</code></td>
+            </tr>
+            <tr>
+              <td><code>&nbsp; : &amp;nbsp;</code></td>
+              <td><code>&copy; : &amp;copy;</code></td>
+              <td><code>&reg; : &amp;reg;</code></td>
+              <td><code>&trade; : &amp;trade;</code></td>
+              <td><code>&cent; : &amp;cent;</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p></p>
+      </li>
+    </ul>
+  </main>
 
   <nav>
     <h2>Other pages on this site:</h2>

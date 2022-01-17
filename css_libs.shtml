@@ -20,67 +20,73 @@
 </head>
 
 <body onload="pageload()">
-  <h1>Quick Reference for CSS/style Libraries:</h1>
+  <header>
+    <!--#include virtual="../assets/templates/header.shtml" -->
+  </header>
 
-  <p>There are many CSS/styling libraries in the world.
-    This page attempts to document some of them.
-    This page will <i>not</i> try to convince you which library to use.
-    It will <i>not</i> try to teach you any given library in depth (follow the link(s) for that).
-    Instead, this page will present a quick reference for each library, including:
+  <main>
+    <h1>Quick Reference for CSS/style Libraries:</h1>
+
+    <p>There are many CSS/styling libraries in the world.
+      This page attempts to document some of them.
+      This page will <i>not</i> try to convince you which library to use.
+      It will <i>not</i> try to teach you any given library in depth (follow the link(s) for that).
+      Instead, this page will present a quick reference for each library, including:
+      <ul>
+        <li>Library name and most recent version tested</li>
+        <li>A link to the library homepage</li>
+        <li>
+          A <code>link</code> or <code>script</code> tag to link the library, typically via CDN.
+          <br>
+          Where possible, I've chosen a CDN from the library producer, rather than a 3rd-party CDN service.
+        </li>
+        <li>
+          A bare-bones example that can be easily copied and modified.
+        </li>
+        <li>
+          Where applicable, brief tips to ensure the library is properly used/initialized.
+        </li>
+        <li>
+          Where applicable, a short reference table of common classes to apply
+        </li>
+      </ul>
+    </p>
+
+    <h2>Listing of Style Library Includes:</h2>
+
     <ul>
-      <li>Library name and most recent version tested</li>
-      <li>A link to the library homepage</li>
       <li>
-        A <code>link</code> or <code>script</code> tag to link the library, typically via CDN.
-        <br>
-        Where possible, I've chosen a CDN from the library producer, rather than a 3rd-party CDN service.
-      </li>
-      <li>
-        A bare-bones example that can be easily copied and modified.
-      </li>
-      <li>
-        Where applicable, brief tips to ensure the library is properly used/initialized.
-      </li>
-      <li>
-        Where applicable, a short reference table of common classes to apply
+        <h3>Bootstrap 5</h3>
+        <p>
+          <a href="https://getbootstrap.com/" title="Bootstrap Home">https://getbootstrap.com/</a>
+        </p>
+        <p>
+          <span class="inclusion">CSS Include:
+            <br>
+            <code id="txt_bootstrap_css"></code>
+          </span>
+          <br>
+          <span class="inclusion">JS Include:
+            <br>
+            <code id="txt_bootstrap_js"></code>
+          </span>
+          <br>
+          <span class="inclusion">Bootstrap also requires popper:
+            <br>
+            <code id="txt_bootstrap_popper"></code>
+          </span>
+        </p>
+        Example:
+        <table class="example_table">
+          <tr>
+            <td><code id="txt_bootstrap_ex"></code></td>
+            <td>&Rightarrow;</td>
+            <td><p class="text-primary">Text made primary (blue) by Bootstrap</p></td>
+          </tr>
+        </table>
       </li>
     </ul>
-  </p>
-
-  <h2>Listing of Style Library Includes:</h2>
-
-  <ul>
-    <li>
-      <h3>Bootstrap 5</h3>
-      <p>
-        <a href="https://getbootstrap.com/" title="Bootstrap Home">https://getbootstrap.com/</a>
-      </p>
-      <p>
-        <span class="inclusion">CSS Include:
-          <br>
-          <code id="txt_bootstrap_css"></code>
-        </span>
-        <br>
-        <span class="inclusion">JS Include:
-          <br>
-          <code id="txt_bootstrap_js"></code>
-        </span>
-        <br>
-        <span class="inclusion">Bootstrap also requires popper:
-          <br>
-          <code id="txt_bootstrap_popper"></code>
-        </span>
-      </p>
-      Example:
-      <table class="example_table">
-        <tr>
-          <td><code id="txt_bootstrap_ex"></code></td>
-          <td>&Rightarrow;</td>
-          <td><p class="text-primary">Text made primary (blue) by Bootstrap</p></td>
-        </tr>
-      </table>
-    </li>
-  </ul>
+  </main>
 
   <nav>
     <div style="display: flex;">

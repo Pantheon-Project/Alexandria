@@ -17,27 +17,33 @@
 </head>
 
 <body onload="pageload()">
-  <h1>Quick Reference for JavaScript Frameworks:</h1>
+  <header>
+    <!--#include virtual="../assets/templates/header.shtml" -->
+  </header>
 
-  <p>
-    There are many JavaScript frameworks in the world.
-    This page attempts to document some of them.
-    This page will <i>not</i> try to convince you which framework to use.
-    It will <i>not</i> try to teach you any given framework in depth (follow the link(s) for that).
-    Instead, this page will present a quick reference for each framework, including:
+  <main>
+    <h1>Quick Reference for JavaScript Frameworks:</h1>
+
+    <p>
+      There are many JavaScript frameworks in the world.
+      This page attempts to document some of them.
+      This page will <i>not</i> try to convince you which framework to use.
+      It will <i>not</i> try to teach you any given framework in depth (follow the link(s) for that).
+      Instead, this page will present a quick reference for each framework, including:
+      <ul>
+        <li>Framework name and most recent version tested</li>
+        <li>A link to framework homepage</li>
+        <li>Brief outline of code to ensure the framework is properly used/initialized.</li>
+      </ul>
+    </p>
+
+    <h2>Listing of JavaScript Framework Includes:</h2>
     <ul>
-      <li>Framework name and most recent version tested</li>
-      <li>A link to framework homepage</li>
-      <li>Brief outline of code to ensure the framework is properly used/initialized.</li>
+      <li>
+        <p>No content yet.</p>
+      </li>
     </ul>
-  </p>
-
-  <h2>Listing of JavaScript Framework Includes:</h2>
-  <ul>
-    <li>
-      <p>No content yet.</p>
-    </li>
-  </ul>
+  </main>
 
   <nav>
     <div style="display: flex;">

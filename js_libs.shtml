@@ -17,70 +17,76 @@
 </head>
 
 <body onload="pageload()">
-  <h1>Quick Reference for JavaScript Libraries:</h1>
+  <header>
+    <!--#include virtual="../assets/templates/header.shtml" -->
+  </header>
 
-  <p>
-    There are many JavaScript libraries in the world.
-    This page attempts to document some of them.
-    This page will <i>not</i> try to convince you which library to use.
-    It will <i>not</i> try to teach you any given library in depth (follow the link(s) for that).
-    Instead, this page will present a quick reference for each library, including:
+  <main>
+    <h1>Quick Reference for JavaScript Libraries:</h1>
+
+    <p>
+      There are many JavaScript libraries in the world.
+      This page attempts to document some of them.
+      This page will <i>not</i> try to convince you which library to use.
+      It will <i>not</i> try to teach you any given library in depth (follow the link(s) for that).
+      Instead, this page will present a quick reference for each library, including:
+      <ul>
+        <li>Library name and most recent version tested</li>
+        <li>A link to library homepage</li>
+        <li>
+          A <code>link</code> or <code>script</code> tag to link the library, typically via CDN.
+          <br>
+          Where possible, I've chosen a CDN from the library producer, rather than a 3rd-party CDN service.
+        </li>
+        <li>
+          A bare-bones example that can be easily copied and modified.
+        </li>
+        <li>
+          Where applicable, brief tips to ensure the library is properly used/initialized.
+        </li>
+        <li>
+          Where applicable, a short reference table of common functions and their uses.
+        </li>
+      </ul>
+    </p>
+
+    <h2>Listing of JavaScript Library Includes:</h2>
     <ul>
-      <li>Library name and most recent version tested</li>
-      <li>A link to library homepage</li>
       <li>
-        A <code>link</code> or <code>script</code> tag to link the library, typically via CDN.
-        <br>
-        Where possible, I've chosen a CDN from the library producer, rather than a 3rd-party CDN service.
+        <h3>jQuery 3</h3>
+        <p class="inclusion">Include: <code id="txt_jquery"></code></p>
+        Example:
+        <table class="example_table">
+          <tr>
+            <td><pre><code>
+    $(document).ready(function () {
+      $("#tgt_jquery_ex")
+      .text("Blue text inserted by jQuery")
+      .addClass("jquery_blue_text");
+    });
+            </code></pre></td>
+            <td>&Rightarrow;</td>
+            <td><p id="tgt_jquery_ex"></p></td>
+            <script>
+            </script>
+          </tr>
+        </table>
       </li>
+
       <li>
-        A bare-bones example that can be easily copied and modified.
-      </li>
-      <li>
-        Where applicable, brief tips to ensure the library is properly used/initialized.
-      </li>
-      <li>
-        Where applicable, a short reference table of common functions and their uses.
+        <h3>mathJax</h3>
+        <p class="inclusion">Include: <code id="txt_mathjax"></code></p>
+        Example equation:
+        <table class="example_table">
+          <tr>
+            <td><code id="txt_mjax_ex"></code></td>
+            <td>&Rightarrow;</td>
+            <td>$$\int_a^b x^2 = \frac{1}{3}x^3 |_a^b$$</td>
+          </tr>
+        </table>
       </li>
     </ul>
-  </p>
-
-  <h2>Listing of JavaScript Library Includes:</h2>
-  <ul>
-    <li>
-      <h3>jQuery 3</h3>
-      <p class="inclusion">Include: <code id="txt_jquery"></code></p>
-      Example:
-      <table class="example_table">
-        <tr>
-          <td><pre><code>
-  $(document).ready(function () {
-    $("#tgt_jquery_ex")
-    .text("Blue text inserted by jQuery")
-    .addClass("jquery_blue_text");
-  });
-          </code></pre></td>
-          <td>&Rightarrow;</td>
-          <td><p id="tgt_jquery_ex"></p></td>
-          <script>
-          </script>
-        </tr>
-      </table>
-    </li>
-
-    <li>
-      <h3>mathJax</h3>
-      <p class="inclusion">Include: <code id="txt_mathjax"></code></p>
-      Example equation:
-      <table class="example_table">
-        <tr>
-          <td><code id="txt_mjax_ex"></code></td>
-          <td>&Rightarrow;</td>
-          <td>$$\int_a^b x^2 = \frac{1}{3}x^3 |_a^b$$</td>
-        </tr>
-      </table>
-    </li>
-  </ul>
+  </main>
 
   <nav>
     <div style="display: flex;">
