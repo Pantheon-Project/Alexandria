@@ -30,6 +30,7 @@
     Instead, this page will present a quick reference for each library, including:
     <ul>
       <li>Library name and most recent version tested</li>
+      <li>A link to the library homepage</li>
       <li>
         A <code>link</code> or <code>script</code> tag to link the library, typically via CDN.
         <br>
