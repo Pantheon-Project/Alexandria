@@ -15,11 +15,11 @@
   <!-- Script includes -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" crossorigin="anonymous" defer></script>
   <script type="text/javascript" src="./script/util.js" defer></script>
-  <script type="text/javascript" src="./script/icons.js" defer></script>
+  <script type="text/javascript" src="./script/icon_libs.js" defer></script>
 </head>
 
 <body onload="pageload()">
-  <h1>Quick Reference for HTML and JavaScript Libraries:</h1>
+  <h1>Quick Reference for Icon Libraries:</h1>
 
   <h2>Listing of Icon Library Includes:</h2>
 

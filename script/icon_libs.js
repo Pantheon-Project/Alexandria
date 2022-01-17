@@ -1,5 +1,3 @@
-import { escapeHTML } from "./util.js";
-
 function pageload() {
     // FontAwesome include
     str = `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" crossorigin="anonymous">`;
