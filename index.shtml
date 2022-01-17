@@ -221,7 +221,9 @@
     </ul>
   </nav>
 
-  <!--#include virtual="../assets/templates/footer.html" -->
+  <footer>
+    <!--#include virtual="../assets/templates/footer.html" -->
+  </footer>
 </body>
 
 </html>
