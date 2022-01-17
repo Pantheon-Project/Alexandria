@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>JavaScript Framework Quick Reference </title>
+  <meta name="description" content="Quick Reference for JavaScript Frameworks">
+
+  <!-- HTML includes -->
+  <!--#include virtual="../assets/templates/header.html" -->
+
+  <!-- Style includes -->
+  <link rel="stylesheet" type="text/css" href="./style.css">
+
+  <!-- Script includes -->
+  <script type="text/javascript" src="./script/util.js" defer></script>
+  <script type="text/javascript" src="./script/js_libs.js" defer></script>
+</head>
+
+<body onload="pageload()">
+  <h1>Quick Reference for JavaScript Frameworks:</h1>
+
+  <p>
+    There are many JavaScript frameworks in the world.
+    This page attempts to document some of them.
+    This page will <i>not</i> try to convince you which framework to use.
+    It will <i>not</i> try to teach you any given framework in depth (follow the link(s) for that).
+    Instead, this page will present a quick reference for each framework, including:
+    <ul>
+      <li>Framework name and most recent version tested</li>
+      <li>A link to framework homepage</li>
+      <li>Brief outline of code to ensure the framework is properly used/initialized.</li>
+    </ul>
+  </p>
+
+  <h2>Listing of JavaScript Framework Includes:</h2>
+  <ul>
+    <li>
+      <p>No content yet.</p>
+    </li>
+  </ul>
+
+  <p style="display: flex;">
+    <span>
+      Previous:
+      <a href="./js_libs.shtml" title="Quick reference for JavaScript libraries">JavaScript Libraries</a>
+    </span>
+    <span style="margin-left: auto;">
+      Next:
+      <a href="./index.shtml" title="Metis Homepage">Home</a>
+    </span>
+    <br>
+  </p>
+  <p>
+    Return to <a href="./index.shtml" title="Metis Homepage">Metis homepage</a>
+  </p>
+
+  <!--#include virtual="../assets/templates/footer.html" -->
+</body>
+
+</html>

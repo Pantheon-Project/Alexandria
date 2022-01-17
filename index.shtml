@@ -200,47 +200,12 @@
     </li>
   </ul>
 
-  <h2>Listing of JavaScript Library Includes:</h2>
-  <ul>
-    <li>
-      <h3>jQuery 3</h3>
-      <p class="inclusion">Include: <code id="txt_jquery"></code></p>
-      Example:
-      <table class="example_table">
-        <tr>
-          <td><pre><code>
-  $(document).ready(function () {
-    $("#tgt_jquery_ex")
-    .text("Blue text inserted by jQuery")
-    .addClass("blue_text");
-  });
-          </code></pre></td>
-          <td>&Rightarrow;</td>
-          <td><p id="tgt_jquery_ex"></p></td>
-          <script>
-          </script>
-        </tr>
-      </table>
-    </li>
-
-    <li>
-      <h3>mathJax</h3>
-      <p class="inclusion">Include: <code id="txt_mathjax"></code></p>
-      Example equation:
-      <table class="example_table">
-        <tr>
-          <td><code id="txt_mjax_ex"></code></td>
-          <td>&Rightarrow;</td>
-          <td>$$\int_a^b x^2 = \frac{1}{3}x^3 |_a^b$$</td>
-        </tr>
-      </table>
-    </li>
-  </ul>
-
   <h2>Other pages on this site:</h2>
   <ul>
     <li><a href="./css_libs.shtml" title="Quick reference for CSS/style libraries">CSS/style Libraries</a></li>
     <li><a href="./icon_libs.shtml" title="Quick reference for icon libraries">Icon Libraries</a></li>
+    <li><a href="./js_libs.shtml" title="Quick reference for JavaScript libraries">JavaScript Libraries</a></li>
+    <li><a href="./frameworks.shtml" title="Quick reference for JavaScript frameworks">JavaScript Frameworks</a></li>
   </ul>
 
   <!--#include virtual="../assets/templates/footer.html" -->
