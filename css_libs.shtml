@@ -82,20 +82,21 @@
     </li>
   </ul>
 
-  <p style="display: flex;">
-    <span>
-      Previous:
-      <a href="./index.shtml" title="Metis Homepage">Home</a>
-    </span>
-    <span style="margin-left: auto;">
-      Next:
-      <a href="./icon_libs.shtml" title="Quick reference for icon libraries">Icon Libraries</a>
-    </span>
-    <br>
-  </p>
-  <p>
-    Return to <a href="./index.shtml" title="Metis Homepage">Metis homepage</a>
-  </p>
+  <nav>
+    <div style="display: flex;">
+      <span>
+        Previous:
+        <a href="./index.shtml" title="Metis Homepage">Home</a>
+      </span>
+      <span style="margin-left: auto;">
+        Next:
+        <a href="./icon_libs.shtml" title="Quick reference for icon libraries">Icon Libraries</a>
+      </span>
+    </div>
+    <div>
+      Return to <a href="./index.shtml" title="Metis Homepage">Metis homepage</a>
+    </div>
+  </nav>
 
   <!--#include virtual="../assets/templates/footer.html" -->
 </body>

@@ -245,20 +245,21 @@
     </li>
   </ul>
 
-  <p style="display: flex;">
-    <span>
-      Previous:
-      <a href="./css_libs.shtml" title="Quick reference for CSS/style libraries">CSS/style Libraries</a>
-    </span>
-    <span style="margin-left: auto;">
-      Next:
-      <a href="./js_libs.shtml" title="Quick reference for JavaScript libraries">JavaScript Libraries</a>
-    </span>
-    <br>
-  </p>
-  <p>
-    Return to <a href="./index.shtml" title="Metis Homepage">Metis homepage</a>
-  </p>
+  <nav>
+    <div style="display: flex;">
+      <span>
+        Previous:
+        <a href="./css_libs.shtml" title="Quick reference for CSS/style libraries">CSS/style Libraries</a>
+      </span>
+      <span style="margin-left: auto;">
+        Next:
+        <a href="./js_libs.shtml" title="Quick reference for JavaScript libraries">JavaScript Libraries</a>
+      </span>
+    </div>
+    <div>
+      Return to <a href="./index.shtml" title="Metis Homepage">Metis homepage</a>
+    </div>
+  </nav>
 
   <!--#include virtual="../assets/templates/footer.html" -->
 </body>
