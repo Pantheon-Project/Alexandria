@@ -27,6 +27,7 @@ p {
 }
 .example_table code {
     color: black;
+    font-family: monospace;
 }
 
 .jquery_blue_text {
