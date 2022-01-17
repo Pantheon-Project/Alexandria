@@ -13,5 +13,5 @@ function pageload() {
 $(document).ready(function () {
     $("#tgt_jquery_ex")
     .text("Blue text inserted by jQuery")
-    .addClass("blue_text");
+    .addClass("jquery_blue_text");
 });
