@@ -1,6 +1,10 @@
-code {
-    color: black;
-    font-family: 'Segoe UI';
+p {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.inclusion code {
+    color: firebrick;
 }
 
 .chartable {
@@ -14,10 +18,9 @@ code {
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
-
-/* .fatable i {
-    font-weight: 900;
-} */
+.chartable code {
+    font-family: 'Segoe UI';
+}
 
 .example_table {
     border: 1px solid black;
