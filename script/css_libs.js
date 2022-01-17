@@ -7,6 +7,6 @@ function pageload() {
     str = `<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>`;
     document.getElementById("txt_bootstrap_popper").textContent = str;
     // Bootstrap code
-    str = `<p class="text-primary">Text made blue by Bootstrap</p>`;
+    str = `<p class="text-primary">Text made primary (blue) by Bootstrap</p>`;
     document.getElementById("txt_bootstrap_ex").textContent = str;
 }
