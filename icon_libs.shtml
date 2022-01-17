@@ -22,8 +22,7 @@
 <body onload="pageload()">
   <h1>Quick Reference for Icon Libraries:</h1>
 
-  <p>
-    There are many icon libraries in the world.
+  <p>There are many icon libraries in the world.
     This page attempts to document some of them.
     This page will <i>not</i> try to convince you which library to use.
     It will <i>not</i> try to teach you any given library in depth (follow the link(s) for that).
@@ -36,12 +35,8 @@
         <br>
         Where possible, I've chosen a CDN from the library producer, rather than a 3rd-party CDN service.
       </li>
-      <li>
-        A bare-bones example that can be easily copied and modified.
-      </li>
-      <li>
-        Where applicable, brief tips to ensure the library is properly used/initialized.
-      </li>
+      <li>Where applicable, brief tips to ensure the library is properly used/initialized.</li>
+      <li>A bare-bones example that can be easily copied and modified.</li>
       <li>
         Where applicable, a short reference table of common icons to use.
         <br>
@@ -55,6 +50,9 @@
   <ul>
     <li>
       <h3>Bootstrap Icons (v1.7)</h3>
+      <p>
+        <a href="https://icons.getbootstrap.com/" title="Bootstrap Icons Home">https://icons.getbootstrap.com/</a>
+      </p>
       <p class="inclusion">CSS Include:
          <br>
          <code id="txt_bootstrapicon"></code>
