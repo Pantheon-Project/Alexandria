@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-  <title>Web Icon Library Quick Reference </title>
-  <meta name="description" content="Quick Reference for Web Icon Libraries">
+  <title>Web Icon Library Quick Reference</title>
+  <meta name="description" content="Quick Reference for Web Icon Libraries"/>
 
   <!-- HTML includes -->
   <!--#include virtual="../assets/templates/head_meta.shtml" -->
 
   <!-- Style includes -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" type="text/css" href="./style.css"/>
 
   <!-- Script includes -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" crossorigin="anonymous" defer></script>

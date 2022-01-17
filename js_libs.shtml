@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-  <title>JavaScript Library Quick Reference </title>
-  <meta name="description" content="Quick Reference for JavaScript Libraries">
+  <title>JavaScript Library Quick Reference</title>
+  <meta name="description" content="Quick Reference for JavaScript Libraries"/>
 
   <!-- HTML includes -->
   <!--#include virtual="../assets/templates/head_meta.shtml" -->
 
   <!-- Style includes -->
-  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="./style.css"/>
 
   <!-- Script includes -->
   <script type="text/javascript" src='https://code.jquery.com/jquery-3.6.0.min.js' crossorigin="anonymous" defer></script>
