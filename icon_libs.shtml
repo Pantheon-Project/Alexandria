@@ -62,8 +62,8 @@
           <br>
           <code id="txt_bootstrapicon"></code>
         </p>
-        Example:
         <table class="example_table">
+          <caption>Example:</caption>
           <tr>
             <td> <pre><code id="txt_bootstrapicon_ex"></code></pre> </td>
             <td>&Rightarrow;</td>
@@ -80,13 +80,13 @@
           <code>bi</code>
           to set some kind of default styling.
         </p>
-        <p>
-          A sample of icons is given below, for comprehensive reference, see:
-          <a href="https://icons.getbootstrap.com/#icons" title="Bootstrap Icons reference page">
-          https://icons.getbootstrap.com/#icons
-          </a>
-        </p>
         <table class="chartable fatable">
+          <caption>
+            A sample of icons is given below, for comprehensive reference, see:
+            <a href="https://icons.getbootstrap.com/#icons" title="Bootstrap Icons reference page">
+            https://icons.getbootstrap.com/#icons
+            </a>
+          </caption>
           <thead>
             <tr>
               <th>Symbol : Name</th>
@@ -137,8 +137,8 @@
           <a href="https://fontawesome.com/kits/" title="FontAwesome Kits">https://fontawesome.com/kits/</a>.
           Your kit will include an embed code.
         </p>
-        Example:
         <table class="example_table">
+          <caption>Example:</caption>
           <tr>
             <td> <pre><code id="txt_fontawesome_ex"></code></pre> </td>
             <td>&Rightarrow;</td>
@@ -157,16 +157,16 @@
           To set the icon, give the icon name prefixed with
           <code>fa-</code>
         </p>
-        <p>
-          A sample of icons is given below, for comprehensive reference, see:
-          <a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free" title="FontAwesome icons reference page">
-          https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free
-          </a>
-          <br>
-          Or
-          <a href="https://fontawesome.com/v5/cheatsheet" title="FontAwesome Cheatsheet v5">https://fontawesome.com/v5/cheatsheet</a>
-        </p>
         <table class="chartable fatable">
+          <caption>
+            A sample of icons is given below, for comprehensive reference, see:
+            <a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free" title="FontAwesome icons reference page">
+            https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free
+            </a>
+            <br>
+            Or
+            <a href="https://fontawesome.com/v5/cheatsheet" title="FontAwesome Cheatsheet v5">https://fontawesome.com/v5/cheatsheet</a>
+          </caption>
           <thead>
             <tr>
               <th>Symbol : Name</th>
@@ -202,8 +202,8 @@
           <br>
           <code id="txt_feather"></code>
         </p>
-        Example:
         <table class="example_table">
+          <caption>Example:</caption>
           <tr>
             <td> <pre><code id="txt_feather_ex"></code></pre> </td>
             <td>&Rightarrow;</td>
@@ -214,12 +214,14 @@
           Feather has 286 icons.
           <br>
           To make the Feather icons render, your script must include a call to <code>feather.replace()</code><br>
-          A sample of icons given below, for comprehensive reference, see:
-          <a href="https://feathericons.com/" title="Feather icons reference page">
-          https://feathericons.com/
-          </a><br>
         </p>
         <table class="chartable">
+          <caption>
+            A sample of icons given below, for comprehensive reference, see:
+            <a href="https://feathericons.com/" title="Feather icons reference page">
+            https://feathericons.com/
+            </a>
+          </caption>
           <thead>
             <tr>
               <th>Symbol : Name</th>

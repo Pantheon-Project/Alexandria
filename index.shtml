@@ -12,8 +12,6 @@
   <link rel="stylesheet" type="text/css" href="./style.css">
 
   <!-- Script includes -->
-  <script type="text/javascript" src='https://code.jquery.com/jquery-3.6.0.min.js' crossorigin="anonymous" defer></script>
-  <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' crossorigin="anonymous" defer></script>
   <script type="text/javascript" src="./script/util.js" defer></script>
   <script type="text/javascript" src="./script/index.js" defer></script>
 </head>

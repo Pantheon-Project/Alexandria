@@ -1,3 +1,9 @@
+caption {
+    caption-side: top;
+    text-align: left;
+    white-space: nowrap;
+}
+
 .inclusion code {
     color: firebrick;
 }

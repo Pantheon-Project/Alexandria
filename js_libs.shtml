@@ -12,6 +12,8 @@
   <link rel="stylesheet" type="text/css" href="./style.css">
 
   <!-- Script includes -->
+  <script type="text/javascript" src='https://code.jquery.com/jquery-3.6.0.min.js' crossorigin="anonymous" defer></script>
+  <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' crossorigin="anonymous" defer></script>
   <script type="text/javascript" src="./script/util.js" defer></script>
   <script type="text/javascript" src="./script/js_libs.js" defer></script>
 </head>
@@ -55,15 +57,15 @@
       <li>
         <h3>jQuery 3</h3>
         <p class="inclusion">Include: <code id="txt_jquery"></code></p>
-        Example:
         <table class="example_table">
+          <caption>Example:</caption>
           <tr>
             <td><pre><code>
-    $(document).ready(function () {
-      $("#tgt_jquery_ex")
-      .text("Blue text inserted by jQuery")
-      .addClass("jquery_blue_text");
-    });
+$(document).ready(function () {
+  $("#tgt_jquery_ex")
+  .text("Blue text inserted by jQuery")
+  .addClass("jquery_blue_text");
+});
             </code></pre></td>
             <td>&Rightarrow;</td>
             <td><p id="tgt_jquery_ex"></p></td>
@@ -76,8 +78,8 @@
       <li>
         <h3>mathJax</h3>
         <p class="inclusion">Include: <code id="txt_mathjax"></code></p>
-        Example equation:
         <table class="example_table">
+          <caption>Example equation:</caption>
           <tr>
             <td><code id="txt_mjax_ex"></code></td>
             <td>&Rightarrow;</td>
