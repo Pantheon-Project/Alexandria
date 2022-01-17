@@ -25,12 +25,6 @@ p {
 .example_table {
     border: 1px solid black;
 }
-.example_table tr {
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    text-justify: center;
-}
 .example_table code {
     color: black;
 }
