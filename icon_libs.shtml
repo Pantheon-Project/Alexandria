@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Web Icon Library Quick Reference </title>
+  <meta name="description" content="Quick Reference for Web Icon Libraries">
+
+  <!-- HTML includes -->
+  <!--#include virtual="../assets/templates/header.html" -->
+
+  <!-- Style includes -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" crossorigin="anonymous" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+
+  <!-- Script includes -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" crossorigin="anonymous" defer></script>
+  <script type="text/javascript" src="./script/util.js" defer></script>
+  <script type="text/javascript" src="./script/icons.js" defer></script>
+</head>
+
+<body onload="pageload()">
+  <h1>Quick Reference for HTML and JavaScript Libraries:</h1>
+
+  <h2>Listing of Icon Library Includes:</h2>
+
+  <ul>
+    <li>
+      <h3>FontAwesome (v5.15)</h3>
+      <p>JS Include: <code id="txt_fontawesome"></code></p>
+      Example:
+      <table class="example_table">
+        <tr>
+          <td> <pre><code id="txt_fontawesome_ex"></code></pre> </td>
+          <td>&Rightarrow;</td>
+          <td><i class="fas fa-circle"></i></td>
+        </tr>
+      </table>
+      A sample of icons given below, for comprehensive reference, see:
+      <a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free" title="FontAwesome icons reference page">
+        https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free
+      </a><br>
+      <table class="chartable fatable">
+        <thead>
+          <tr>
+            <th>Symbol : Name</th>
+            <th>Symbol : Name</th>
+            <th>Symbol : Name</th>
+            <th>Symbol : Name</th>
+            <th>Symbol : Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><i class="fas fa-heartbeat"></i> : <code>fa-heartbeat</code></td>
+            <td><i class="fas">&#xf551;</i> : <code>align-center</code></td>
+            <td><i data-feather="anchor"></i> : <code>anchor</code></td>
+            <td><i data-feather="aperture"></i> : <code>aperture</code></td>
+            <td><i data-feather="arrow-up-circle"></i> : <code>arrow-up-circle</code></td>
+          </tr>
+          <tr>
+            <td><i data-feather="bell"></i> : <code>bell</code></td>
+            <td><i data-feather="bookmark"></i> : <code>bookmark</code></td>
+            <td><i data-feather="box"></i> : <code>box</code></td>
+            <td><span class="fas fa-camera"></span> : <code>fa-camera</code></td>
+            <td><i data-feather="clipboard"></i> : <code>clipboard</code></td>
+          </tr>
+        </tbody>
+      </table>
+      <p></p>
+    </li>
+
+    <li>
+      <h3>Feather</h3>
+      <p>JS Include: <code id="txt_feather"></code></p>
+      Example:
+      <table class="example_table">
+        <tr>
+          <td> <pre><code id="txt_feather_ex"></code></pre> </td>
+          <td>&Rightarrow;</td>
+          <td><i data-feather="circle"></i></td>
+        </tr>
+      </table>
+      To make the Feather icons render, your script must include a call to <code>feather.replace()</code><br>
+      A sample of icons given below, for comprehensive reference, see:
+      <a href="https://feathericons.com/" title="Feather icons reference page">
+        https://feathericons.com/
+      </a><br>
+      <table class="chartable">
+        <thead>
+          <tr>
+            <th>Symbol : Name</th>
+            <th>Symbol : Name</th>
+            <th>Symbol : Name</th>
+            <th>Symbol : Name</th>
+            <th>Symbol : Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><i data-feather="activity"></i> : <code>activity</code></td>
+            <td><i data-feather="align-center"></i> : <code>align-center</code></td>
+            <td><i data-feather="anchor"></i> : <code>anchor</code></td>
+            <td><i data-feather="aperture"></i> : <code>aperture</code></td>
+            <td><i data-feather="arrow-up-circle"></i> : <code>arrow-up-circle</code></td>
+          </tr>
+          <tr>
+            <td><i data-feather="bell"></i> : <code>bell</code></td>
+            <td><i data-feather="bookmark"></i> : <code>bookmark</code></td>
+            <td><i data-feather="box"></i> : <code>box</code></td>
+            <td><i data-feather="camera"></i> : <code>camera</code></td>
+            <td><i data-feather="clipboard"></i> : <code>clipboard</code></td>
+          </tr>
+        </tbody>
+      </table>
+      <p></p>
+    </li>
+  </ul>
+
+  <!--#include virtual="../assets/templates/footer.html" -->
+</body>
+
+</html>
