@@ -204,7 +204,7 @@
   <ul>
     <li>
       <h3>jQuery 3</h3>
-      <p>Include: <code id="txt_jquery"></code></p>
+      <p class="inclusion">Include: <code id="txt_jquery"></code></p>
       Example:
       <table class="example_table">
         <tr>
@@ -225,7 +225,7 @@
 
     <li>
       <h3>mathJax</h3>
-      <p>Include: <code id="txt_mathjax"></code></p>
+      <p class="inclusion">Include: <code id="txt_mathjax"></code></p>
       Example equation:
       <table class="example_table">
         <tr>

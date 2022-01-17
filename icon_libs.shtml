@@ -9,7 +9,8 @@
   <!--#include virtual="../assets/templates/header.html" -->
 
   <!-- Style includes -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" crossorigin="anonymous" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" type="text/css" href="./style.css">
 
   <!-- Script includes -->
@@ -25,20 +26,35 @@
 
   <ul>
     <li>
-      <h3>FontAwesome (v5.15)</h3>
-      <p>JS Include: <code id="txt_fontawesome"></code></p>
+      <h3>Bootstrap Icons (v1.7)</h3>
+      <p class="inclusion">CSS Include:
+         <br>
+         <code id="txt_bootstrapicon"></code>
+      </p>
       Example:
       <table class="example_table">
         <tr>
-          <td> <pre><code id="txt_fontawesome_ex"></code></pre> </td>
+          <td> <pre><code id="txt_bootstrapicon_ex"></code></pre> </td>
           <td>&Rightarrow;</td>
-          <td><i class="fas fa-circle"></i></td>
+          <td><i class="bi-circle"></i></td>
         </tr>
       </table>
-      A sample of icons given below, for comprehensive reference, see:
-      <a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free" title="FontAwesome icons reference page">
-        https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free
-      </a><br>
+      <p>
+         Bootstrap Icons has > 1,500 icons
+         <br>
+         To set the icon, give the icon name prefixed with
+         <code>bi-</code>
+         <br>
+         Optionally include class
+         <code>bi</code>
+         to set some kind of default styling.
+      </p>
+      <p>
+         A sample of icons is given below, for comprehensive reference, see:
+         <a href="https://icons.getbootstrap.com/#icons" title="Bootstrap Icons reference page">
+         https://icons.getbootstrap.com/#icons
+         </a>
+      </p>
       <table class="chartable fatable">
         <thead>
           <tr>
@@ -51,27 +67,110 @@
         </thead>
         <tbody>
           <tr>
-            <td><i class="fas fa-heartbeat"></i> : <code>fa-heartbeat</code></td>
-            <td><i class="fas">&#xf551;</i> : <code>align-center</code></td>
-            <td><i data-feather="anchor"></i> : <code>anchor</code></td>
-            <td><i data-feather="aperture"></i> : <code>aperture</code></td>
-            <td><i data-feather="arrow-up-circle"></i> : <code>arrow-up-circle</code></td>
+            <td><i class="bi-activity"></i> : <code>activity</code></td>
+            <td><i class="bi-align-center"></i> : <code>align-center</code></td>
+            <td><i class="bi-alarm"></i> : <code>alarm</code></td>
+            <td><i class="bi-arrow-up-circle"></i> : <code>arrow-up-circle</code></td>
+            <td><i class="bi-bar-chart"></i> : <code>bar-chart</code></td>
           </tr>
           <tr>
-            <td><i data-feather="bell"></i> : <code>bell</code></td>
-            <td><i data-feather="bookmark"></i> : <code>bookmark</code></td>
-            <td><i data-feather="box"></i> : <code>box</code></td>
-            <td><span class="fas fa-camera"></span> : <code>fa-camera</code></td>
-            <td><i data-feather="clipboard"></i> : <code>clipboard</code></td>
+            <td><i class="bi-bell"></i> : <code>bell</code></td>
+            <td><i class="bi-bookmark"></i> : <code>bookmark</code></td>
+            <td><i class="bi-box"></i> : <code>box</code></td>
+            <td><i class="bi-camera"></i> : <code>camera</code></td>
+            <td><i class="bi-clipboard"></i> : <code>clipboard</code></td>
           </tr>
         </tbody>
       </table>
-      <p></p>
+      <p><br></p>
     </li>
 
     <li>
-      <h3>Feather</h3>
-      <p>JS Include: <code id="txt_feather"></code></p>
+      <h3>FontAwesome (v5.15)</h3>
+      <p class="inclusion">CSS Include:
+         <br>
+         <code id="txt_fontawesome"></code>
+      </p>
+      <p>
+         FontAwesome also has "personal" embed codes with a registered account.
+         These offer more custom options.
+         <br>
+         For v4, sign up at
+         <a href="https://cdn.fontawesome.com" title="FontAwesome CDN">https://cdn.fontawesome.com</a>
+         , and access your code(s) via
+         <a href="https://cdn.fontawesome.com/embed-codes" title="FontAwesome Embed Codes">https://cdn.fontawesome.com/embed-codes</a>
+         <br>
+         For v5+, sign up at
+         <a href="https://fontawesome.com/start" title="FontAwesome Start Page">https://fontawesome.com/start</a>
+         , and access your "kit(s)" via
+         <a href="https://fontawesome.com/kits/" title="FontAwesome Kits">https://fontawesome.com/kits/</a>.
+         Your kit will include an embed code.
+      </p>
+      Example:
+      <table class="example_table">
+        <tr>
+          <td> <pre><code id="txt_fontawesome_ex"></code></pre> </td>
+          <td>&Rightarrow;</td>
+          <td><i class="far fa-circle"></i></td>
+        </tr>
+      </table>
+      <p>
+         FontAwesome has 1,608 icons (in the free version)
+         <br>
+         To set the icon style, class should include either
+         <code>far</code>
+         for "regular" or
+         <code>fas</code>
+         for "solid" style.
+         <br>
+         To set the icon, give the icon name prefixed with
+         <code>fa-</code>
+      </p>
+      <p>
+         A sample of icons is given below, for comprehensive reference, see:
+         <a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free" title="FontAwesome icons reference page">
+         https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free
+         </a>
+         <br>
+         Or
+         <a href="https://fontawesome.com/v5/cheatsheet" title="FontAwesome Cheatsheet v5">https://fontawesome.com/v5/cheatsheet</a>
+      </p>
+      <table class="chartable fatable">
+        <thead>
+          <tr>
+            <th>Symbol : Name</th>
+            <th>Symbol : Name</th>
+            <th>Symbol : Name</th>
+            <th>Symbol : Name</th>
+            <th>Symbol : Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><i class="fas fa-heartbeat"></i> : <code>heartbeat</code></td>
+            <td><i class="fas fa-align-center"></i> : <code>align-center</code></td>
+            <td><i class="far fa-clock"></i> : <code>clock</code></td>
+            <td><i class="far fa-arrow-alt-circle-up"></i> : <code>arrow-alt-circle-up</code></td>
+            <td><i class="fas fa-chart-bar"></i> : <code>chart-bar</code></td>
+          </tr>
+          <tr>
+            <td><i class="far fa-bell"></i> : <code>bell</code></td>
+            <td><i class="far fa-bookmark"></i> : <code>bookmark</code></td>
+            <td><i class="fas fa-box"></i> : <code>box</code></td>
+            <td><i class="fas fa-camera"></i> : <code>camera</code></td>
+            <td><i class="far fa-clipboard"></i> : <code>clipboard</code></td>
+          </tr>
+        </tbody>
+      </table>
+      <p><br></p>
+    </li>
+
+    <li>
+      <h3>Feather (v4.28)</h3>
+      <p class="inclusion">JS Include:
+        <br>
+        <code id="txt_feather"></code>
+      </p>
       Example:
       <table class="example_table">
         <tr>
@@ -80,11 +179,15 @@
           <td><i data-feather="circle"></i></td>
         </tr>
       </table>
-      To make the Feather icons render, your script must include a call to <code>feather.replace()</code><br>
-      A sample of icons given below, for comprehensive reference, see:
-      <a href="https://feathericons.com/" title="Feather icons reference page">
-        https://feathericons.com/
-      </a><br>
+      <p>
+         Feather has 286 icons.
+         <br>
+         To make the Feather icons render, your script must include a call to <code>feather.replace()</code><br>
+         A sample of icons given below, for comprehensive reference, see:
+         <a href="https://feathericons.com/" title="Feather icons reference page">
+         https://feathericons.com/
+         </a><br>
+      </p>
       <table class="chartable">
         <thead>
           <tr>
@@ -99,9 +202,9 @@
           <tr>
             <td><i data-feather="activity"></i> : <code>activity</code></td>
             <td><i data-feather="align-center"></i> : <code>align-center</code></td>
-            <td><i data-feather="anchor"></i> : <code>anchor</code></td>
-            <td><i data-feather="aperture"></i> : <code>aperture</code></td>
+            <td><i data-feather="clock"></i> : <code>clock</code></td>
             <td><i data-feather="arrow-up-circle"></i> : <code>arrow-up-circle</code></td>
+            <td><i data-feather="bar-chart"></i> : <code>bar-chart</code></td>
           </tr>
           <tr>
             <td><i data-feather="bell"></i> : <code>bell</code></td>
@@ -112,13 +215,25 @@
           </tr>
         </tbody>
       </table>
-      <p></p>
+      <p><br></p>
     </li>
   </ul>
 
-  <span>
-   Return to <a href="./index.shtml" title="Metis Homepage">Metis homepage</a>
-  </span>
+  <p style="display: flex;">
+    <span>
+      Previous:
+      <a href="./css_libs.shtml" title="Quick reference for CSS/style libraries">CSS/style Libraries</a>
+    </span>
+    <span style="margin-left: auto;">
+      Next:
+      <a href="./index.shtml" title="Metis Homepage">Home</a>
+    </span>
+    <br>
+  </p>
+  <p>
+    Return to <a href="./index.shtml" title="Metis Homepage">Metis homepage</a>
+  </p>
+
   <!--#include virtual="../assets/templates/footer.html" -->
 </body>
 
