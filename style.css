@@ -31,6 +31,9 @@ p {
     text-align: center;
     text-justify: center;
 }
+.example_table code {
+    color: black;
+}
 
 .jquery_blue_text {
     color: blue;
