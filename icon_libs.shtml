@@ -116,6 +116,9 @@
     </li>
   </ul>
 
+  <span>
+   Return to <a href="./index.shtml" title="Metis Homepage">Metis homepage</a>
+  </span>
   <!--#include virtual="../assets/templates/footer.html" -->
 </body>
 
