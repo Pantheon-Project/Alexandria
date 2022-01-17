@@ -15,6 +15,10 @@ code {
     border-right: 1px solid black;
 }
 
+/* .fatable i {
+    font-weight: 900;
+} */
+
 .example_table {
     border: 1px solid black;
 }
