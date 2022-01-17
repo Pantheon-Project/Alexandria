@@ -21,6 +21,17 @@
 <body onload="pageload()">
   <h1>Quick Reference for HTML and JavaScript Libraries:</h1>
 
+  <p>
+    There are many HTML/CSS/JS libraries in the world.
+    This website attempts to document some of them.
+    This site will <i>not</i> try to convince you which libraries to use.
+    It will <i>not</i> try to teach you any given library in depth (follow the link(s) for that).
+    Instead, this site will present a quick reference for each library, as well as a number of handy built-in HTML/CSS/JS things.
+    <br>
+    This homepage documents very basic concepts such as file inclusion and some lesser-known built-in topics.
+    Other pages cover various categories of library.
+  </p>
+
   <h2>Including local/remote files into HTML</h2>
   <ul>
     <li>
