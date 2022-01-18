@@ -13,7 +13,7 @@
 
   <!-- Script includes -->
   <script type="text/javascript" src="./script/util.js" defer></script>
-  <script type="text/javascript" src="./script/js_libs.js" defer></script>
+  <script type="text/javascript" src="./script/frameworks.js" defer></script>
 </head>
 
 <body onload="pageload()">
