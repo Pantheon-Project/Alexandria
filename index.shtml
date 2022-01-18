@@ -77,7 +77,7 @@
         <a href="https://www.w3schools.com/charsets/ref_utf_math.asp" title="W3Schools reference page">
           https://www.w3schools.com/charsets/ref_utf_math.asp
         </a>)
-        <table class="chartable">
+        <table class="lib_reftable">
           <thead>
             <tr>
               <th>Symbol : Code</th>
@@ -152,7 +152,7 @@
         <a href="https://www.w3schools.com/charsets/ref_utf_greek.asp" title="W3Schools reference page">
           https://www.w3schools.com/charsets/ref_utf_greek.asp
         </a>) <br>
-        <table class="chartable">
+        <table class="lib_reftable">
           <thead>
             <tr>
               <th>Symbol : Code</th>
@@ -183,7 +183,7 @@
       </li>
 
       <li>HTML other entities:
-        <table class="chartable">
+        <table class="lib_reftable">
           <thead>
             <tr>
               <th>Symbol : Code</th>

@@ -27,7 +27,8 @@
   <main>
     <h1>Quick Reference for CSS/style Libraries:</h1>
 
-    <p>There are many CSS/styling libraries in the world.
+    <section id="sec_summary"><p>
+      There are many CSS/styling libraries in the world.
       This page attempts to document some of them.
       This page will <i>not</i> try to convince you which library to use.
       It will <i>not</i> try to teach you any given library in depth (follow the link(s) for that).
@@ -50,61 +51,63 @@
           Where applicable, a short reference table of common classes to apply
         </li>
       </ul>
-    </p>
+    </p></section>
 
     <h2>Listing of Style Library Includes:</h2>
 
     <ul>
-      <li>
-        <h3>Bootstrap 5</h3>
-        <p>
-          <a href="https://getbootstrap.com/" title="Bootstrap Home">https://getbootstrap.com/</a>
-        </p>
-        <p>
-          <span class="inclusion">CSS Include:
+      <li id="_boostrap">
+        <section>
+          <div class="lib_name">
+            <h3>Bootstrap 5</h3>
+            <a href="https://getbootstrap.com/" title="Bootstrap Home">https://getbootstrap.com/</a>
+          </div>
+          <div class="lib_inclusion">
+            <span>CSS Include:
+              <br>
+              <code id="txt_bootstrap_css"></code>
+            </span>
             <br>
-            <code id="txt_bootstrap_css"></code>
-          </span>
-          <br>
-          <span class="inclusion">JS Include:
+            <span>JS Include:
+              <br>
+              <code id="txt_bootstrap_js"></code>
+            </span>
             <br>
-            <code id="txt_bootstrap_js"></code>
-          </span>
-          <br>
-          <span class="inclusion">Bootstrap also requires popper:
-            <br>
-            <code id="txt_bootstrap_popper"></code>
-          </span>
-        </p>
-        Example:
-        <table class="example_table">
-          <tr>
-            <td><code id="txt_bootstrap_ex"></code></td>
-            <td>&Rightarrow;</td>
-            <td><p class="text-primary">Text made primary (blue) by Bootstrap</p></td>
-          </tr>
-        </table>
+            <span">Bootstrap also requires popper:
+              <br>
+              <code id="txt_bootstrap_popper"></code>
+            </span>
+          </div>
+          <table class="lib_example_table">
+            <caption>Example:</caption>
+            <tr>
+              <td><code id="txt_bootstrap_ex"></code></td>
+              <td>&Rightarrow;</td>
+              <td><p class="text-primary">Text made primary (blue) by Bootstrap</p></td>
+            </tr>
+          </table>
+        </section>
       </li>
     </ul>
   </main>
 
-  <nav>
-    <div style="display: flex;">
-      <span>
-        Previous:
-        <a href="./index.shtml" title="Metis Homepage">Home</a>
-      </span>
-      <span style="margin-left: auto;">
-        Next:
-        <a href="./icon_libs.shtml" title="Quick reference for icon libraries">Icon Libraries</a>
-      </span>
-    </div>
-    <div>
-      Return to <a href="./index.shtml" title="Metis Homepage">Metis homepage</a>
-    </div>
-  </nav>
-
   <footer>
+    <nav>
+      <div class="foot_circnav">
+        <span>
+          Previous:
+          <a href="./index.shtml" title="Metis Homepage">Home</a>
+        </span>
+        <span style="margin-left: auto;">
+          Next:
+          <a href="./icon_libs.shtml" title="Quick reference for icon libraries">Icon Libraries</a>
+        </span>
+      </div>
+      <div>
+        Return to <a href="./index.shtml" title="Metis Homepage">Metis homepage</a>
+      </div>
+    </nav>
+
     <!--#include virtual="../assets/templates/footer.html" -->
   </footer>
 </body>
