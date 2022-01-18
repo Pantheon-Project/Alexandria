@@ -9,7 +9,7 @@
   <!--#include virtual="../assets/templates/head_meta.shtml" -->
 
   <!-- Style includes -->
-  <link rel="stylesheet" type="text/css" href="./style.css"/>
+  <link rel="stylesheet" type="text/css" href="./style/style.css"/>
 
   <!-- Script includes -->
   <script type="text/javascript" src='https://code.jquery.com/jquery-3.6.0.min.js' crossorigin="anonymous" defer></script>
