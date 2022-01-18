@@ -1,34 +1,58 @@
 caption {
+    color: black;
     caption-side: top;
     text-align: left;
     white-space: nowrap;
 }
 
-.inclusion code {
+.lib_name {
+    margin-bottom: 1em;
+}
+.lib_name > h3 {
+    margin-bottom: 0em;
+}
+
+.lib_inclusion {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.lib_inclusion code {
     color: firebrick;
 }
 
-.chartable {
+.lib_description {
+
+}
+
+.lib_example_table {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    border: 1px solid black;
+}
+.lib_example_table code {
+    color: black;
+    font-family: monospace;
+}
+
+.lib_reftable {
+    margin-top: 1em;
     border-collapse: collapse;
     border-bottom: 1px solid black;
 }
-.chartable th {
+.lib_reftable th {
     border: 1px solid black;
 }
-.chartable td {
+.lib_reftable td {
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
-.chartable code {
+.lib_reftable code {
     font-family: 'Segoe UI';
 }
 
-.example_table {
-    border: 1px solid black;
-}
-.example_table code {
-    color: black;
-    font-family: monospace;
+.foot_circnav {
+    display: flex;
 }
 
 .jquery_blue_text {
