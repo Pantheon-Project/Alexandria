@@ -54,25 +54,29 @@
 
     <h2>Listing of JavaScript Library Includes:</h2>
     <ul>
-      <li>
-        <h3>jQuery 3</h3>
-        <p class="inclusion">Include: <code id="txt_jquery"></code></p>
-        <table class="example_table">
-          <caption>Example:</caption>
-          <tr>
-            <td><pre><code>
-$(document).ready(function () {
-  $("#tgt_jquery_ex")
-  .text("Blue text inserted by jQuery")
-  .addClass("jquery_blue_text");
-});
-            </code></pre></td>
-            <td>&Rightarrow;</td>
-            <td><p id="tgt_jquery_ex"></p></td>
-            <script>
-            </script>
-          </tr>
-        </table>
+      <li id="sec_jquery">
+        <section>
+          <div class="lib_name">
+            <h3>jQuery 3</h3>
+            <a href="https://jquery.com/" title="jQuery Home">https://jquery.com/</a>
+          </div>
+          <div class="lib_inclusion">
+            Include:
+            <br>
+            <code id="txt_jquery"></code>
+          </div>
+          <table class="lib_example_table">
+            <caption>Example:</caption>
+            <tr>
+              <td><pre><code id=txt_jquery_ex>
+              </code></pre></td>
+              <td>&Rightarrow;</td>
+              <td><p id="tgt_jquery_ex"></p></td>
+              <script>
+              </script>
+            </tr>
+          </table>
+        </section>
       </li>
 
       <li>

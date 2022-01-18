@@ -2,6 +2,15 @@ function pageload() {
     // jQuery include
     str = "<script type=\"text/javascript\" src=\'https://code.jquery.com/jquery-3.6.0.min.js\'></script>";
     document.getElementById("txt_jquery").textContent = str;
+    // jQuery example
+    str = `
+$(document).ready(function () {
+  $("#tgt_jquery_ex")
+  .text("Blue text inserted by jQuery")
+  .addClass("jquery_blue_text");
+});
+    `;
+    document.getElementById("txt_jquery_ex").textContent = str;
     // mathjax include & code
     str = "<script type=\"text/javascript\" src=\'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML\' async></script>";
     document.getElementById("txt_mathjax").textContent = str;
